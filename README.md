@@ -57,10 +57,17 @@ When done, start the program `System Settings` and verify that you're running So
 
 There are, or rather were, two older repositories containing SonicDE third-party packages for Artix Linux. These could be found at the following addresses:
 
-* https://artixlinux.duckdns.org/repos/sonicde
-* https://x11libre.net/repo/arch_based/x86_64/sonicde
+```conf
+Server = https://artixlinux.duckdns.org/repos/sonicde
+Server = https://x11libre.net/repo/arch_based/x86_64/sonicde
+```
 
-Please note that the packages at these locations are no longer being updated. You can migrate to our repository by importing our PGP key as described above in "Adding the Public Package Signing Key to pacman" and then running `pacman -Syu`.
+Please note that these repositories are no longer being updated. You can migrate to our repository by importing our OpenPGP key [`sonicde-artixlinux.asc`](https://sonicde-artix.github.io/sonicde-artixlinux.asc) as described above in "Adding the Public Package Signing Key to pacman". Then replace the old `Server` URLs with the following one in your `/etc/pacman.conf`:
+
+```conf
+Server = https://sonicde-artix.github.io/$arch
+```
+Finally run `pacman -Syu` to update the installed SonicDE packages and the rest of your system.
 
 ## Getting in Contact
 
