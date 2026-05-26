@@ -16,7 +16,7 @@ sudo pacman-key --add sonicde-artixlinux.asc
 sudo pacman-key --finger 72AAA51726BC3C29
 sudo pacman-key --lsign-key 72AAA51726BC3C29
 ```
-You can read more package signing on the [pacman/Package signing - ArchWiki](https://wiki.archlinux.org/title/Pacman/Package_signing#Adding_unofficial_keys) page.
+You can read more about package signing on the [pacman/Package signing - ArchWiki](https://wiki.archlinux.org/title/Pacman/Package_signing#Adding_unofficial_keys) page.
 
 ### Adding the Repository to Pacman
 
@@ -53,9 +53,18 @@ sudo pacman -S sonicde-meta
 
 When done, start the program `System Settings` and verify that you're running SonicDE on the "About this System" page. You do? Congratulations!
 
+## Migrating From Older Repositories
+
+There are, or rather were, two older repositories containing SonicDE third-party packages for Artix Linux. These could be found at the following addresses:
+
+* https://artixlinux.duckdns.org/repos/sonicde
+* https://x11libre.net/repo/arch_based/x86_64/sonicde
+
+Please note that the packages at these locations are no longer being updated. You can migrate to our repository by importing our PGP key as described above in "Adding the Public Package Signing Key to pacman" and then running `pacman -Syu`.
+
 ## Getting in Contact
 
-Please report any enhancement requests or issues with this repository at [Issues · sonicde-artix/sonicde-artix](https://github.com/sonicde-artix/sonicde-artix/issues). If you have a specific issue, please see the [list of package repositories](https://github.com/orgs/sonicde-artix/repositories?q=topic%3Apackage) and report it there. In case you need help, want to report success or talk about other aspects, please also check the official SonicDE channels.
+Please report any enhancement requests or issues with this repository at [Issues · sonicde-artix/sonicde-artix](https://github.com/sonicde-artix/sonicde-artix/issues). If you have a specific issue, please see the [list of package repositories](https://github.com/orgs/sonicde-artix/repositories?q=topic%3Apackage) and report it there. In case you need help, want to report success, or talk about other aspects, please also check the official SonicDE channels.
 
 <img src="./docs/icons/bluesky.svg">&nbsp;[Bluesky](https://bsky.app/profile/sonicdesktop.bsky.social)&nbsp; <img src="./docs/icons/discord.svg">&nbsp;[Discord](https://discord.gg/cNZMQ62u5S) &nbsp; <img src="./docs/icons/mastodon.svg">&nbsp;[Mastodon](https://mastodon.social/@sonicdesktop) &nbsp; <img src="./docs/icons/matrix.svg">&nbsp;[Matrix](https://matrix.to/#/#sonicdesktop:matrix.org) &nbsp; <img src="./docs/icons/oftc.svg">&nbsp;[OFTC IRC](https://webchat.oftc.net/?channels=sonicde%2Csonicde-devel%2Csonicde-dist&uio=MT11bmRlZmluZWQb1) &nbsp; <img src="./docs/icons/telegram.svg">&nbsp;[Telegram](https://t.me/sonic_de) &nbsp; <img src="./docs/icons/x.svg">&nbsp;[X (Twitter)](https://x.com/SonicDesktop)
 
