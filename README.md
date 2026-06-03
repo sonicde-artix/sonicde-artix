@@ -4,6 +4,22 @@
 
 This third-party repository provides [SonicDE](https://sonicde.org) x86_64 binary  packages for [Artix Linux](https://artixlinux.org). SonicDE, or the Sonic Desktop Environment, aims to preserve and improve the X11-specific aspects of KDE. You can learn more about SonicDE at [sonicde.org](https://sonicde.org/).
 
+## Switching to SonicDE Automatically
+
+You can download and run the [`sonic-switch.sh`](sonic-switch.sh) script to automatically switch to SonicDE on your Artix Linux system:
+
+```
+curl -O https://sonicde-artix.github.io/sonic-switch.sh
+sh sonic-switch.sh
+````
+
+You'll be asked to compare the fingerprint of the OpenPGP key used to sign the packages with this one:
+```text
+D166 B8DB 57D1 55D5 7B4C  469F 72AA A517 26BC 3C29
+```
+
+The script may restart your graphical session so please save all your work beforehand. It will also silently replace the conflicting KDE components with the SonicDE ones. At the end, you have the option to switch to the [Sonic Login Manager](https://github.com/Sonic-DE/sonic-login-manager) from your current one. In case you don't get logged out automatically, please do so manually and log in again to start using SonicDE.
+
 ## Installing SonicDE Manually
 
 ### Adding the Public Package Signing Key to pacman
@@ -16,6 +32,7 @@ sudo pacman-key --add sonicde-artixlinux.asc
 sudo pacman-key --finger 72AAA51726BC3C29
 sudo pacman-key --lsign-key 72AAA51726BC3C29
 ```
+
 You can read more about package signing on the [pacman/Package signing - ArchWiki](https://wiki.archlinux.org/title/Pacman/Package_signing#Adding_unofficial_keys) page.
 
 ### Adding the Repository to Pacman
