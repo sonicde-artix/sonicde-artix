@@ -37,7 +37,7 @@ You can read more about package signing on the [pacman/Package signing - ArchWik
 
 ### Adding the Repository to Pacman
 
-Once you added the public key, also add an entry for the SonicDE repository to the end of the file `/etc/pacman.conf`:
+Once you added the public key, also add an entry for the SonicDE repository to the end of the file `/etc/pacman.conf` by running the following instructions at the command line:
 
 ```shell
 sudo tee -a /etc/pacman.conf <<'EOF'
