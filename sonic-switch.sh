@@ -32,7 +32,7 @@ thank_you() {
 
 # Constants
 
-VERS='0.7.0'
+VERS='0.7.1'
 PGP_KEY='72AAA51726BC3C29'
 ORIG_URL='https://sonicde-artix.github.io'
 REPO_URL="$ORIG_URL/\$arch"
