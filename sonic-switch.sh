@@ -130,8 +130,14 @@ set -e
 msg '\nUpdating your packages:'
 $SUDO_CMD pacman -Syyu
 
-msg '\nInstalling SonicDE:'
-yes | $SUDO_CMD pacman -S --needed sonicde-meta
+msg "$(cat <<-'EO_INST'
+
+	Installing SonicDE. If you''re being asked to remove any KDE packages in favor
+	of the SonicDE ones, please press ''y'' for yes.
+
+EO_INST
+)"
+$SUDO_CMD pacman -S --needed sonicde-meta
 
 
 ## Login Manager Replacement
