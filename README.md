@@ -41,7 +41,7 @@ Once you added the public key, also add an entry for the SonicDE repository to t
 
 ```ini
 [sonicde]
-Server = https://sonicde-arch.github.io/$arch
+Server = https://sonicde-artix.github.io/$arch
 ```
 
 Run `pacman` to update all package indexes and installed packages:
