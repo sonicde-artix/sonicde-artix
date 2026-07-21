@@ -1,0 +1,83 @@
+# Maintainer: callmetango
+# Contributor: artist <artist@artixlinux.org>
+
+pkgname=sonic-mobile-interface
+pkgver=6.6.5
+pkgrel=1
+pkgdesc='Sonic shell for mobile devices'
+arch=(x86_64)
+url="https://github.com/Sonic-DE/$pkgname"
+license=(LGPL-2.0-or-later)
+depends=(
+  bash
+  bluez-qt
+  glibc
+  sonic-frameworks-auth
+  kcmutils
+  kconfig
+  sonic-frameworks-core-addons
+  kdbusaddons
+  kdeclarative
+  ki18n
+  sonic-frameworks-io
+  kirigami
+  kirigami-addons
+  kitemmodels
+  kjobwidgets
+  knewstuff
+  knotifications
+  kpackage
+  kpipewire
+  kservice
+  ksvg
+  kwayland
+  sonic-win
+  sonic-frameworks-windowsystem
+  layer-shell-qt
+  libgcc
+  sonic-screen-library
+  sonic-interface-libraries
+  libstdc++
+  milou
+  modemmanager-qt
+  networkmanager-qt
+  plasma-keyboard
+  plasma-nano
+  sonic-audio-applet-pulse
+  sonic-network-manager
+  sonic-workspace
+  powerdevil
+  qcoro
+  qt6-5compat
+  qt6-base
+  qt6-declarative
+  qt6-sensors
+  solid
+  libudev
+)
+makedepends=(
+  cmake
+  sonic-frameworks-cmake-modules
+)
+optdepends=(
+  'bluedevil: Bluetooth management'
+  'sonic-screen: Screen management'
+  'plasma-settings: System settings'
+)
+groups=(sonicde)
+conflicts=(plasma-info)
+provides=(plasma-info)
+replaces=(plasma-info)
+source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
+sha256sums=('60a9a3df8ffc9243cb7df4eb8505980e762be2b7e3021742c5937efa90821ca9')
+
+build() {
+  cmake -B build -S $pkgname-$pkgver \
+    -DBUILD_TESTING=OFF \
+    -DCMAKE_INSTALL_LIBEXECDIR=lib
+  cmake --build build
+}
+
+package() {
+  DESTDIR="$pkgdir" cmake --install build
+}

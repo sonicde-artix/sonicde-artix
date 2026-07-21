@@ -1,0 +1,20 @@
+# Maintainer: callmetango
+
+pkgname=sonic-login-manager-openrc
+pkgver=20260606
+pkgrel=3
+pkgdesc='OpenRC init script for sonic-login-manager'
+arch=(any)
+url='https://github.com/Sonic-DE/sonic-login-manager'
+license=(GPL-2.0-or-later)
+groups=(sonicde)
+depends=(openrc sonic-login-manager)
+provides=(init-sonic-login-manager init-displaymanager)
+conflicts=(init-sonic-login-manager)
+source=('soniclogin' 'soniclogin.logrotate')
+sha256sums=('e488b8d2d2f8ddc05afacdb3ba1c0612af94e6b593dfcbcb353d34e334f55fbf' '8cf62227cf840b626d9227503028f6ae1d9aa3b9b533519ab06cf29ed2dfda25')
+
+package() {
+    install -Dm755 "$srcdir/soniclogin" "$pkgdir/etc/init.d/soniclogin"
+    install -Dm755 "$srcdir/soniclogin.logrotate" "$pkgdir/etc/logrotate.d/soniclogin"
+}

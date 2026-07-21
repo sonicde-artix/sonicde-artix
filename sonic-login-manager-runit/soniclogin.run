@@ -1,0 +1,13 @@
+#!/bin/sh
+set -e
+
+sv start logind >/dev/null
+
+exec 2>&1
+
+if [ ! -d /run/soniclogin ]; then
+	mkdir -p -m 0711 /run/soniclogin
+	chown soniclogin:soniclogin /run/soniclogin
+fi
+
+exec /usr/bin/soniclogin

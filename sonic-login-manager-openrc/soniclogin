@@ -1,0 +1,31 @@
+#!/sbin/openrc-run
+# Copyright 2024 SonicDE Community
+# Distributed under the terms of the BSD0 License
+
+description="Sonic Login Manager"
+supervisor=supervise-daemon
+
+command="/usr/bin/soniclogin"
+command_args="--foreground"
+pidfile="/run/soniclogin.pid"
+
+output_log="/var/log/sonic/loginmanager.log"
+error_log="/var/log/sonic/loginmanager.err"
+
+depend() {
+    need localmount
+
+    after bootmisc consolefont modules netmount
+    after ypbind autofs openvpn gpm lircmd
+    after quota keymaps acpid
+    before alsasound
+    want logind
+    use xfs
+    provide xdm display-manager
+}
+
+start_pre() {
+    # Ensure the log files exist with the correct user permissions
+    # if running the daemon under a non-root command_user
+    checkpath -f -m 0666 -o root:root "${output_log}" "${error_log}"
+}

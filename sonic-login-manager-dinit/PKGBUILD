@@ -1,0 +1,19 @@
+# Maintainer: callmetango
+
+pkgname=sonic-login-manager-dinit
+pkgver=20260601
+pkgrel=2
+pkgdesc='dinit service scripts for sonic-login-manager'
+arch=(any)
+url='https://github.com/Sonic-DE/sonic-login-manager'
+license=(BSD)
+groups=(sonicde)
+depends=(dbus-dinit sonic-login-manager)
+provides=(init-sonic-login-manager init-displaymanager)
+conflicts=(init-sonic-login-manager)
+source=('soniclogin')
+sha256sums=('adef9799d1d6367a8b46609ef0ef31f3333c08b699cfa01c22d4bd7695de7347')
+
+package() {
+    install -Dm644 soniclogin     "$pkgdir/etc/dinit.d/soniclogin"
+}

@@ -1,0 +1,6 @@
+type            = process
+command         = /usr/bin/soniclogin
+smooth-recovery = true
+logfile         = /var/log/dinit/soniclogin.log
+depends-on      = logind
+depends-on      = login.target
