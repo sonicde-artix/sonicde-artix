@@ -2,7 +2,7 @@
 # Contributor: artist <artist@artixlinux.org>
 
 pkgname=sonic-mobile-interface
-pkgver=6.6.5
+pkgver=6.7.3
 pkgrel=1
 pkgdesc='Sonic shell for mobile devices'
 arch=(x86_64)
@@ -69,7 +69,7 @@ conflicts=(plasma-info)
 provides=(plasma-info)
 replaces=(plasma-info)
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('60a9a3df8ffc9243cb7df4eb8505980e762be2b7e3021742c5937efa90821ca9')
+sha256sums=('d6f7ff3233a0d51c7967b329080e7b9ea7c6573ca406089a2f63e572f651d162')
 
 build() {
   cmake -B build -S $pkgname-$pkgver \
