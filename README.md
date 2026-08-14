@@ -41,7 +41,7 @@ Once you added the public key, also add an entry for the SonicDE repository to t
 
 ```ini
 [sonicde-stable]
-https://github.com/sonicde-artix/stable/releases/download/$arch
+Server = https://github.com/sonicde-artix/stable/releases/download/$arch
 ```
 
 Run `pacman` to update all package indexes and installed packages:
@@ -73,6 +73,7 @@ When done, start the program `System Settings` and verify that you're running So
 There are, or rather were, two older repositories containing SonicDE third-party packages for Artix Linux. These could be found at the following addresses:
 
 ```conf
+[sonicde]
 Server = https://artixlinux.duckdns.org/repos/sonicde
 Server = https://x11libre.net/repo/arch_based/x86_64/sonicde
 ```
@@ -81,7 +82,7 @@ Please note that these repositories are no longer being updated. You can migrate
 
 ```conf
 [sonicde-stable]
-https://github.com/sonicde-artix/stable/releases/download/$arch
+Server = https://github.com/sonicde-artix/stable/releases/download/$arch
 ```
 Finally run `pacman -Syu` to update the installed SonicDE packages and the rest of your system.
 
