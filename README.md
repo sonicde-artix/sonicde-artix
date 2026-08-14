@@ -40,8 +40,8 @@ You can read more about package signing on the [pacman/Package signing - ArchWik
 Once you added the public key, also add an entry for the SonicDE repository to the end of the file [`/etc/pacman.conf`](https://man.archlinux.org/man/pacman.conf.5) using [`sudo`](https://wiki.archlinux.org/title/Sudo) and your favorite editor:
 
 ```ini
-[sonicde]
-Server = https://sonicde-artix.github.io/$arch
+[sonicde-stable]
+https://github.com/sonicde-artix/stable/releases/download/$arch
 ```
 
 Run `pacman` to update all package indexes and installed packages:
@@ -80,7 +80,8 @@ Server = https://x11libre.net/repo/arch_based/x86_64/sonicde
 Please note that these repositories are no longer being updated. You can migrate to our repository by importing our OpenPGP key [`sonicde-artixlinux.asc`](https://sonicde-artix.github.io/sonicde-artixlinux.asc) as described above in "Adding the Public Package Signing Key to pacman". Then replace the old `Server` URLs with the following one in your `/etc/pacman.conf`:
 
 ```conf
-Server = https://sonicde-artix.github.io/$arch
+[sonicde-stable]
+https://github.com/sonicde-artix/stable/releases/download/$arch
 ```
 Finally run `pacman -Syu` to update the installed SonicDE packages and the rest of your system.
 
