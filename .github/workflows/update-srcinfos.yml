@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-FileCopyrightInfo: 2026 callmetango for SonicDE
+
+name: Update .SRCINFOs
+
+on:
+  push:
+    branches:
+      - '**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-srcinfo:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: callmetango/setup-workspace@master
+      - run: update-srcinfos.sh
