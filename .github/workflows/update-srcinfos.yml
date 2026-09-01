@@ -29,7 +29,8 @@ jobs:
           GITHUB_EVENT_BEFORE: ${{ github.event.before }}
         run: |
           auth=$(gh-app-token.sh)
-          GH_APP_SLUG=$(printf '%s\n' "$auth" | cut -f1)
-          GH_TOKEN=$(printf '%s\n' "$auth" | cut -f2)
+          GH_APP_SLUG=$(printf '%s\n' "$auth" | cut -f2)
+          GH_TOKEN=$(printf '%s\n' "$auth" | cut -f1)
           export GH_APP_SLUG GH_TOKEN
+
           update-srcinfos.sh

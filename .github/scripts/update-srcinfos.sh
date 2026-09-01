@@ -43,7 +43,7 @@ git init .
 git config user.name "$bot"
 git config user.email "${bot_id}+$bot@users.noreply.github.com"
 git remote add origin "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY"
-git fetch --depth=1 origin "$GITHUB_REF_NAME"
+git fetch ${GITHUB_EVENT_BEFORE:+--depth 1} origin "$GITHUB_REF_NAME"
 git checkout -B "$GITHUB_REF_NAME" FETCH_HEAD
 
 dirs=$(mktemp)
