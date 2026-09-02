@@ -60,11 +60,9 @@ while IFS= read -r dir; do
 	test -f "$dir/PKGBUILD" || continue
 	test $started -eq 0 && start_container
 
-	tmp=$(mktemp)
 	printf 'Generating %s/.SRCINFO ... ' "$dir"
 	docker exec --user runner --workdir "/workspace/$dir" builder \
-		sh -c 'makepkg --printsrcinfo' >"$tmp"
-	mv "$tmp" "$dir/.SRCINFO"
+		sh -c 'makepkg --printsrcinfo > .SRCINFO'
 	printf 'done\n'
 done <"$dirs"
 
