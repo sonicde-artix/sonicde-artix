@@ -5,8 +5,8 @@ name: Update .SRCINFOs
 
 on:
   push:
-    branches:
-      - '**'
+    branches-ignore:
+      - 'update/**'
     paths-ignore:
       - '**/.SRCINFO'
   workflow_dispatch:
