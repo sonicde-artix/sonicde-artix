@@ -15,17 +15,19 @@ DOCKER_IMAGE="${DOCKER_IMAGE:-ghcr.io/archlinux/archlinux:latest}"
 # Functions
 
 start_container() {
-	uid=$(id -u)
-	docker run --detach --name arch \
+	printf 'Starting Docker container'
+	docker run --detach --name builder \
 		--volume "$GITHUB_WORKSPACE:/workspace" \
-		"$DOCKER_IMAGE" sh -c "
-			useradd -u $uid -m runner
-			while : ; do sleep 3600 ; done
-		"
+		"$DOCKER_IMAGE" sh -c 'while :; do sleep 3600; done'
+	docker exec builder sh -c "
+		set -eu
+		useradd -u $(id -u) -m runner
+	"
+	started=1
 }
 
 cleanup() {
-	docker rm --force arch >/dev/null 2>&1 || :
+	docker rm --force builder >/dev/null 2>&1 || :
 }
 
 
@@ -56,15 +58,11 @@ git diff --name-only "$before" "$GITHUB_SHA" | sed 's:/[^/]*$::' |
 
 while IFS= read -r dir; do
 	test -f "$dir/PKGBUILD" || continue
-
-	if [ $started -eq 0 ] ; then
-		start_container
-		started=1
-	fi
+	test $started -eq 0 && start_container
 
 	tmp=$(mktemp)
 	printf 'Generating %s/.SRCINFO ... ' "$dir"
-	docker exec --user runner --workdir "/workspace/$dir" arch \
+	docker exec --user runner --workdir "/workspace/$dir" builder \
 		sh -c 'makepkg --printsrcinfo' >"$tmp"
 	mv "$tmp" "$dir/.SRCINFO"
 	printf 'done\n'
