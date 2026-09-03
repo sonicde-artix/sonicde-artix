@@ -9,8 +9,8 @@ command="/usr/bin/soniclogin"
 command_args="--foreground"
 pidfile="/run/soniclogin.pid"
 
-output_log="/var/log/sonic/loginmanager.log"
-error_log="/var/log/sonic/loginmanager.err"
+output_log="/var/log/sonic-login-manager.log"
+error_log="/var/log/sonic-login-manager.err"
 
 depend() {
     need localmount
