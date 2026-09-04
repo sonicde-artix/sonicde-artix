@@ -50,7 +50,7 @@ _OLDPWD="$(pwd)"
 
 DL_CMD=
 test "$(command -v curl)" && DL_CMD='curl --remote-name'
-test "$(command -v wget)" && DL_CMD='wget --no-globber'
+test "$(command -v wget)" && DL_CMD='wget --no-clobber'
 
 SUDO_CMD=
 test "$(command -v doas)" && SUDO_CMD='doas'
