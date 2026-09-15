@@ -6,7 +6,7 @@
 # Contributor: Alexey D. <lq07829icatm at rambler.ru>
 
 pkgname=sonic-workspace
-pkgver=6.7.5
+pkgver=6.7.5.1
 pkgrel=1
 pkgdesc='SonicDE workspace components'
 arch=(x86_64)
@@ -125,7 +125,7 @@ conflicts=(plasma-workspace plasma-x11-session sonic-x11-session)
 replaces=(sonic-x11-session)
 groups=(sonicde)
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('0cb03c7fcd71d80675cddd23cf2dfd9e6cdc81995b7b8a854c33d5689ee2b390')
+sha256sums=('a41ca259bce4cf43ece682e3cfaf9f433f66c15059970ac76f66dbc99c70bd39')
 
 build() {
   cmake -B build -S $pkgname-$pkgver \
