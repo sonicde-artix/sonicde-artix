@@ -5,7 +5,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-desktop-interface
-pkgver=6.7.5
+pkgver=6.7.5.1
 pkgrel=1
 pkgdesc='Sonic Desktop Interface'
 arch=(x86_64)
@@ -101,7 +101,7 @@ conflicts=(plasma-desktop)
 groups=(sonicde)
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz"
         '0001-add-explicit-input-backend-options.patch')
-sha256sums=('eab3e8268fb29b031c23e815db3a746452426fb8cf0b8f7b8f8269489c7090bf'
+sha256sums=('c7a8e74fcd11d6ddb3b8b41bab7a7eddab0df48a15c7db8d980baf3a20b42b4b'
             '63afec950ae88f89fcf206b8e40aab3dcc4f5a4df6f456b31ad3ebf20158f440')
 
 prepare() {
