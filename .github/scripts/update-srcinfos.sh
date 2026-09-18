@@ -12,6 +12,7 @@ DOCKER_IMAGE="${DOCKER_IMAGE:-ghcr.io/archlinux/archlinux:latest}"
 : "${APP_ID:?APP_ID must not be empty}"
 : "${GH_APP_SLUG:?GH_APP_SLUG must not be empty}"
 
+
 # Functions
 
 start_container() {
@@ -36,6 +37,9 @@ cleanup() {
 trap cleanup 0
 trap 'cleanup; exit 1' HUP INT TERM
 
+before=${GITHUB_EVENT_BEFORE-}
+test "$before" = '0000000000000000000000000000000000000000' && before=
+
 bot="${GH_APP_SLUG}[bot]"
 bot_id=$(gh api "/users/$bot" --jq '.id')
 started=0
@@ -45,16 +49,14 @@ git init .
 git config user.name "$bot"
 git config user.email "${bot_id}+$bot@users.noreply.github.com"
 git remote add origin "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY"
-git fetch ${GITHUB_EVENT_BEFORE:+--depth 1} origin "$GITHUB_REF_NAME"
-git checkout -B "$GITHUB_REF_NAME" FETCH_HEAD
+
+git fetch --depth 1 origin ${before:+"$before"} "$GITHUB_REF_NAME"
+git checkout -B "$GITHUB_REF_NAME" "origin/$GITHUB_REF_NAME"
 
 dirs=$(mktemp)
-before=${GITHUB_EVENT_BEFORE-}
-git cat-file -e "$before^{commit}" 2>/dev/null ||
-	before=$(git rev-list --max-parents=0 "$GITHUB_SHA")
-git fetch origin "$before"
-git diff --name-only "$before" "$GITHUB_SHA" | sed 's:/[^/]*$::' |
-	sort -u >"$dirs"
+test -n "$before" && git diff --name-only "$before" HEAD >"$dirs"
+test -z "$before" && git ls-files '*/PKGBUILD' PKGBUILD >"$dirs"
+sed 's:/[^/]*$::' "$dirs" | sort -u >"$dirs"-unique
 
 while IFS= read -r dir; do
 	test -f "$dir/PKGBUILD" || continue
@@ -64,12 +66,11 @@ while IFS= read -r dir; do
 	docker exec --user runner --workdir "/workspace/$dir" builder \
 		sh -c 'makepkg --printsrcinfo > .SRCINFO'
 	printf 'done\n'
-done <"$dirs"
-
-status=$(git status --short)
-printf '%s\n' "$status" | grep -q '\.SRCINFO$' || exit 0
+done <"$dirs"-unique
 
 git add -- */.SRCINFO
+git diff --cached --quiet && exit 0
+
 git commit --message 'Update .SRCINFOs'
 git fetch origin "$GITHUB_REF_NAME"
 git rebase "origin/$GITHUB_REF_NAME"
