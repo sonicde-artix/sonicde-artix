@@ -2,7 +2,7 @@
 # Contributor: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=sonic-screenies
-pkgver=6.7.5
+pkgver=6.7.5.1
 pkgrel=1
 pkgdesc='SonicDE screenshot capture utility'
 arch=(x86_64)
@@ -48,7 +48,7 @@ provides=(spectacle)
 conflicts=(spectacle)
 groups=(sonicde)
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('81df00d7d030b2c569fbc44c391dd46313200eb18f6946e9464b51e10b5a0eda')
+sha256sums=('d0e5d96d616c556a1e2fcd3e7f879bae8b66465ba5d61c481ec5961de08a8930')
 
 build() {
   cmake -B build -S $pkgname-$pkgver \
