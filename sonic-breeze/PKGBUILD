@@ -4,7 +4,7 @@
 pkgname=sonic-breeze
 _pkgname=sonic-breeze
 pkgver=6.7.5
-pkgrel=1
+pkgrel=2
 pkgdesc='Highly customizable binary Window Decoration, Application Style and Global Theme plugin for SonicDE.'
 arch=(x86_64)
 url='https://github.com/Sonic-DE/sonic-breeze'
@@ -29,9 +29,9 @@ depends=(frameworkintegration
          sonic-frameworks-gui-addons
          sonic-frameworks-icon-themes
          sonic-frameworks-quick-ui
-         sonic-frameworks-silver-icons
          sonic-frameworks-windowsystem
          sonic-silver
+         sonic-silver-icons
          xdg-utils)
 makedepends=(sonic-frameworks-cmake-modules)
 conflicts=(breeze-cursors)
