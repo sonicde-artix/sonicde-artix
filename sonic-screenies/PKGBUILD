@@ -48,7 +48,7 @@ provides=(spectacle)
 conflicts=(spectacle)
 groups=(sonicde)
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('0be99f4568ac21f1619a9a90c55ed73f5a55f9d6912e8e763de92e0426d8ab71')
+sha256sums=('4ec04d9996fe59fc84146e6af02d58f9f8ffac2fe42abb2b11c0cc4b16091b75')
 
 build() {
   cmake -B build -S $pkgname-$pkgver \
