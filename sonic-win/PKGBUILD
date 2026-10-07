@@ -5,7 +5,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-win
-pkgver=6.7.5.1
+pkgver=6.7.5.3
 pkgrel=1
 pkgdesc='An easy to use, but flexible, X Window Manager'
 arch=(x86_64)
@@ -73,7 +73,7 @@ provides=(kwin-x11)
 conflicts=(kwin-x11)
 groups=(sonicde)
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('fa170d591ebab9540905c972933441648a27bb34eb6481d7cbcb57a8f6665245')
+sha256sums=('953ebf3b68304ae166159dfd689ce726e1d406ea0d93d529ed6962cc917f3fce')
 
 build() {
   cmake -B build -S $pkgname-$pkgver \
