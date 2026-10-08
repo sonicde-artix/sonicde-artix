@@ -6,7 +6,7 @@
 
 pkgname=sonic-interface-libraries
 pkgver=6.7.5.1
-pkgrel=1
+pkgrel=2
 pkgdesc='SonicDE library and runtime components'
 arch=(x86_64)
 url='https://github.com/Sonic-DE/sonic-interface-libraries'
