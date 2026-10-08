@@ -6,7 +6,7 @@
 
 pkgname=sonic-frameworks-runner
 pkgver=6.30.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Framework for providing different actions given a string query'
 arch=(x86_64)
 url='https://github.com/Sonic-DE/sonic-frameworks-runner'
