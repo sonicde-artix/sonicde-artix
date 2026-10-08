@@ -3,7 +3,7 @@
 
 pkgname=sonic-screenies
 pkgver=6.7.5.2
-pkgrel=1
+pkgrel=2
 pkgdesc='SonicDE screenshot capture utility'
 arch=(x86_64)
 url='https://github.com/Sonic-DE/sonic-screenies'
