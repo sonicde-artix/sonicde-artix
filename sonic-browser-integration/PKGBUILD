@@ -3,7 +3,7 @@
 
 pkgname=sonic-browser-integration
 pkgver=6.7.5
-pkgrel=1
+pkgrel=2
 pkgdesc='Browser integration components for SonicDE'
 arch=(x86_64)
 url='https://github.com/Sonic-DE/sonic-browser-integration'
