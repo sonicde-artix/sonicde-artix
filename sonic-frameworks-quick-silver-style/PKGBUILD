@@ -3,7 +3,7 @@
 
 pkgname=sonic-frameworks-quick-silver-style
 pkgver=6.7.5
-pkgrel=1
+pkgrel=2
 pkgdesc='Silver Qt Quick Controls style for SonicDE'
 arch=(x86_64)
 url='https://github.com/Sonic-DE/sonic-frameworks-quick-silver-style'
