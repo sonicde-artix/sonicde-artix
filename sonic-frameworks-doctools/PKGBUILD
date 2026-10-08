@@ -5,7 +5,7 @@
 
 pkgname=sonic-frameworks-doctools
 pkgver=6.30.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Documentation generation from docbook'
 arch=(x86_64)
 url='https://github.com/Sonic-DE/sonic-frameworks-doctools'
