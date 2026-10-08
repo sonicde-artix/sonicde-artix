@@ -3,7 +3,7 @@
 
 pkgname=sonic-welcome-center
 pkgver=6.7.5
-pkgrel=1
+pkgrel=2
 pkgdesc='SonicDE onboarding wizard with Silver defaults'
 arch=(x86_64)
 url='https://github.com/Sonic-DE/sonic-welcome-center'
