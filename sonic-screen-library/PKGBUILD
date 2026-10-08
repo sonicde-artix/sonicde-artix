@@ -6,7 +6,7 @@
 
 pkgname=sonic-screen-library
 pkgver=6.7.5
-pkgrel=1
+pkgrel=2
 pkgdesc='SonicDE screen management library'
 arch=(x86_64)
 url='https://github.com/Sonic-DE/sonic-screen-library'
