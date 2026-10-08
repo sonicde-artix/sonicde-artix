@@ -3,7 +3,7 @@
 
 pkgname=sonic-silver-gtk
 pkgver=6.7.5
-pkgrel=1
+pkgrel=2
 pkgdesc='Silver widget theme for GTK 2 and 3'
 arch=(any)
 url='https://github.com/Sonic-DE/sonic-silver-gtk'
