@@ -3,7 +3,7 @@
 
 pkgname=sonic-pipewire
 pkgver=6.7.5
-pkgrel=1
+pkgrel=2
 pkgdesc='X11-focused PipeWire components for SonicDE'
 arch=(x86_64)
 url='https://github.com/Sonic-DE/sonic-pipewire'
