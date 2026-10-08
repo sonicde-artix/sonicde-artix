@@ -6,7 +6,7 @@
 
 pkgname=sonic-frameworks-io-extras
 pkgver=26.08.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Additional components to increase the functionality of sonic-frameworks-io'
 arch=(x86_64)
 url='https://github.com/Sonic-DE/sonic-frameworks-io-extras'
