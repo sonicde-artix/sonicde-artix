@@ -6,7 +6,7 @@
 
 pkgname=sonic-frameworks-io
 pkgver=6.30.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Resource and network access abstraction'
 arch=(x86_64)
 url='https://github.com/Sonic-DE/sonic-frameworks-io'
