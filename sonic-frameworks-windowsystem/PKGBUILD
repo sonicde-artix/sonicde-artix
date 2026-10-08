@@ -6,7 +6,7 @@
 
 pkgname=sonic-frameworks-windowsystem
 pkgver=6.30.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Access to the windowing system'
 arch=(x86_64)
 url='https://github.com/Sonic-DE/sonic-frameworks-windowsystem'
