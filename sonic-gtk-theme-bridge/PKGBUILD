@@ -5,7 +5,7 @@
 
 pkgname=sonic-gtk-theme-bridge
 pkgver=6.7.5
-pkgrel=1
+pkgrel=2
 pkgdesc='Syncs SonicDE settings to GTK applications'
 arch=(x86_64)
 url='https://github.com/Sonic-DE/sonic-gtk-theme-bridge'
