@@ -6,7 +6,7 @@
 
 pkgname=sonic-frameworks-keybind
 pkgver=6.30.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Add support for global workspace shortcuts'
 arch=(x86_64)
 url='https://github.com/Sonic-DE/sonic-frameworks-keybind'
