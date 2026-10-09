@@ -30,8 +30,14 @@ jobs:
   update-srcinfo:
     runs-on: ubuntu-24.04
     steps:
-      - uses: callmetango/setup-workspace@master
-      - env:
+      - name: Setup workspace
+        uses: callmetango/setup-workspace@master
+        with:
+          inputs: ${{ toJSON(inputs) }}
+          vars: ${{ toJSON(vars) }}
+
+      - name: Update .SRCINFOs
+        env:
           APP_ID: ${{ vars.APP_ID }}
           APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
           GITHUB_EVENT_BEFORE: ${{ github.event.before }}

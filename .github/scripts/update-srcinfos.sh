@@ -11,6 +11,7 @@ set -eu
 DOCKER_IMAGE="${DOCKER_IMAGE:-ghcr.io/archlinux/archlinux:latest}"
 : "${APP_ID:?APP_ID must not be empty}"
 : "${GH_APP_SLUG:?GH_APP_SLUG must not be empty}"
+: "${PACKAGE_FEATURES?PACKAGE_FEATURES must be defined}"
 : "${TARGET_BRANCH:?TARGET_BRANCH must not be empty}"
 
 
@@ -65,7 +66,7 @@ while IFS= read -r dir; do
 
 	printf 'Generating %s/.SRCINFO ... ' "$dir"
 	docker exec --user runner --workdir "/workspace/$dir" builder \
-		sh -c 'makepkg --printsrcinfo > .SRCINFO'
+		sh -c 'makepkg --printsrcinfo ${1:-} > .SRCINFO' sh "${PACKAGE_FEATURES}"
 	printf 'done\n'
 done <"$dirs"-unique
 
