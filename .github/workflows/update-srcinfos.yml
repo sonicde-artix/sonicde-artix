@@ -35,7 +35,7 @@ jobs:
           APP_ID: ${{ vars.APP_ID }}
           APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
           GITHUB_EVENT_BEFORE: ${{ github.event.before }}
-          GITHUB_REF_NAME: ${{ inputs.branch || github.ref_name }}
+          TARGET_BRANCH: ${{ inputs.branch || github.ref_name }}
         run: |
           auth=$(gh-app-token.sh)
           GH_APP_SLUG=$(printf '%s\n' "$auth" | cut -f2)

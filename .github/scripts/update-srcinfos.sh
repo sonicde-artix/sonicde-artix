@@ -11,6 +11,7 @@ set -eu
 DOCKER_IMAGE="${DOCKER_IMAGE:-ghcr.io/archlinux/archlinux:latest}"
 : "${APP_ID:?APP_ID must not be empty}"
 : "${GH_APP_SLUG:?GH_APP_SLUG must not be empty}"
+: "${TARGET_BRANCH:?TARGET_BRANCH must not be empty}"
 
 
 # Functions
@@ -50,8 +51,8 @@ git config user.name "$bot"
 git config user.email "${bot_id}+$bot@users.noreply.github.com"
 git remote add origin "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY"
 
-git fetch --depth 1 origin ${before:+"$before"} "$GITHUB_REF_NAME"
-git checkout -B "$GITHUB_REF_NAME" "origin/$GITHUB_REF_NAME"
+git fetch --depth 1 origin ${before:+"$before"} "$TARGET_BRANCH"
+git checkout -B "$TARGET_BRANCH" "origin/$TARGET_BRANCH"
 
 dirs=$(mktemp)
 test -n "$before" && git diff --name-only "$before" HEAD >"$dirs"
@@ -72,6 +73,6 @@ git add -- */.SRCINFO
 git diff --cached --quiet && exit 0
 
 git commit --message 'Update .SRCINFOs'
-git fetch origin "$GITHUB_REF_NAME"
-git rebase "origin/$GITHUB_REF_NAME"
-git push origin "$GITHUB_REF_NAME"
+git fetch origin "$TARGET_BRANCH"
+git rebase "origin/$TARGET_BRANCH"
+git push origin "$TARGET_BRANCH"
