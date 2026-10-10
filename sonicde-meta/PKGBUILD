@@ -59,7 +59,6 @@ depends=(
 	'sonic-welcome-center'
 	'sonic-workspace-addons'
 	'sonic-write-daemon'
-	'union'
 	'xdg-desktop-portal-sonicde'
 )
 ((USE_SYSTEMD)) && depends+=('sonic-firewall')
@@ -74,6 +73,7 @@ optdepends=(
 	'sonic-gamma: Adjust gamma settings on X'
 	'sonic-silver-sddm: SDDM silver theme'
 	'sonic-workspace-wallpapers: Additional wallpapers'
+	'union: Next generation QtQuick/QtWidgets style engine'
 )
 provides=('plasma-meta')
 conflicts=('plasma-meta')
