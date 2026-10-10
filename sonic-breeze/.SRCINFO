@@ -1,7 +1,7 @@
 pkgbase = sonic-breeze
 	pkgdesc = Artwork, styles and assets for the Breeze visual style for SonicDE
 	pkgver = 6.7.5
-	pkgrel = 3
+	pkgrel = 4
 	url = https://github.com/Sonic-DE/sonic-breeze
 	arch = x86_64
 	groups = sonicde
@@ -25,7 +25,6 @@ pkgbase = sonic-breeze
 	depends = sonic-frameworks-widgets-addons
 	depends = sonic-frameworks-windowsystem
 	depends = sonic-silver-icons
-	conflicts = breeze
 	conflicts = breeze-cursors
 	source = sonic-breeze-6.7.5.tar.gz::https://github.com/Sonic-DE/sonic-breeze/archive/refs/tags/6.7.5.tar.gz
 	sha256sums = 927307907a5c5af11e48ee5c426d17c3dbae3826f005ce9b0ea2de408ccb6422
