@@ -1,0 +1,34 @@
+# Maintainer: callmetango
+
+pkgname=sonicde-meta-runit
+pkgver=6.7
+pkgrel=1
+pkgdesc='Runit service stack for SonicDE on Artix Linux'
+arch=('any')
+url='https://github.com/Sonic-DE'
+license=('None')
+groups=('sonicde')
+depends=(
+	'bluez-runit'
+	'dbus-runit'
+	'elogind-runit'
+	'esettingsd'
+	'esysusers'
+	'etmpfiles'
+	'networkmanager-runit'
+	'pipewire-pulse'
+	'sonicde-meta'
+	'wireplumber'
+)
+optdepends=(
+	'bolt-runit: Thunderbolt device management'
+	'firewalld-runit: firewalld backend for Sonic Firewall'
+	'ufw-runit: UFW backend for Sonic Firewall'
+)
+provides=('init-sonicde-meta')
+conflicts=('init-sonicde-meta')
+options=('!debug')
+
+package() {
+	:
+}

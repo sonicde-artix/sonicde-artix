@@ -2,25 +2,32 @@
 
 pkgname=sonic-login-manager-s6
 pkgver=20260531
-pkgrel=2
-pkgdesc="s6-rc service scripts for sonic-login-manager"
-arch=(any)
+pkgrel=3
+pkgdesc='s6-rc service scripts for sonic-login-manager'
+arch=('any')
 url='https://github.com/Sonic-DE/sonic-login-manager'
-license=(GPL-2.0-or-later)
-groups=(sonicde)
-provides=(init-sonic-login-manager init-displaymanager)
-conflicts=(init-sonic-login-manager)
-depends=(logind-s6 s6-base sonic-login-manager)
+license=('GPL-2.0-or-later')
+groups=('sonicde')
+depends=(
+	'elogind-s6'
+	's6-base'
+	'sonic-login-manager'
+)
+provides=(
+	'init-displaymanager'
+	'init-sonic-login-manager'
+)
+conflicts=('init-sonic-login-manager')
 source=(
-    consumer-for
-    dependencies
-    notification-fd
-    pipeline-name
-    producer-for
-    run-log
-    run-srv
-    soniclogin.conf
-    type
+	'consumer-for'
+	'dependencies'
+	'notification-fd'
+	'pipeline-name'
+	'producer-for'
+	'run-log'
+	'run-srv'
+	'soniclogin.conf'
+	'type'
 )
 sha256sums=('c4c9d55f88df59cd2b40e1a90a830164980469039a957c4c4de7ffc5618c9d91'
             'effd1bbdf73bf135b285d2f6cbaf33f9ad8dc529e3219b096a0a0a4f8bf9f21f'
@@ -33,23 +40,23 @@ sha256sums=('c4c9d55f88df59cd2b40e1a90a830164980469039a957c4c4de7ffc5618c9d91'
             'd0001a150b83f68f09004c5059045cb76a3f064eed4d42ce072bc3722c118006')
 
 package() {
-    install -dm755 "$pkgdir"/etc/s6/sv/soniclogin-srv
-    install -Dm644 producer-for "$pkgdir"/etc/s6/sv/soniclogin-srv/producer-for
-    install -Dm644 run-srv "$pkgdir"/etc/s6/sv/soniclogin-srv/run
-    install -Dm644 type "$pkgdir"/etc/s6/sv/soniclogin-srv/type
+	install -dm755 "$pkgdir"/etc/s6/sv/soniclogin-srv
+	install -Dm644 producer-for "$pkgdir"/etc/s6/sv/soniclogin-srv/producer-for
+	install -Dm644 run-srv "$pkgdir"/etc/s6/sv/soniclogin-srv/run
+	install -Dm644 type "$pkgdir"/etc/s6/sv/soniclogin-srv/type
 
-    install -dm755 "$pkgdir"/etc/s6/sv/soniclogin-srv/dependencies.d
-    while IFS= read -r dep ; do
-      touch "$pkgdir"/etc/s6/sv/soniclogin-srv/dependencies.d/"$dep"
-    done < dependencies
+	install -dm755 "$pkgdir"/etc/s6/sv/soniclogin-srv/dependencies.d
+	while IFS= read -r dep ; do
+		touch "$pkgdir"/etc/s6/sv/soniclogin-srv/dependencies.d/"$dep"
+	done < dependencies
 
-    install -dm755 "$pkgdir"/etc/s6/sv/soniclogin-log
-    install -Dm644 consumer-for "$pkgdir"/etc/s6/sv/soniclogin-log/consumer-for
-    install -Dm644 notification-fd "$pkgdir"/etc/s6/sv/soniclogin-log/notification-fd
-    install -Dm644 pipeline-name "$pkgdir"/etc/s6/sv/soniclogin-log/pipeline-name
-    install -Dm644 run-log "$pkgdir"/etc/s6/sv/soniclogin-log/run
-    install -Dm644 type "$pkgdir"/etc/s6/sv/soniclogin-log/type
+	install -dm755 "$pkgdir"/etc/s6/sv/soniclogin-log
+	install -Dm644 consumer-for "$pkgdir"/etc/s6/sv/soniclogin-log/consumer-for
+	install -Dm644 notification-fd "$pkgdir"/etc/s6/sv/soniclogin-log/notification-fd
+	install -Dm644 pipeline-name "$pkgdir"/etc/s6/sv/soniclogin-log/pipeline-name
+	install -Dm644 run-log "$pkgdir"/etc/s6/sv/soniclogin-log/run
+	install -Dm644 type "$pkgdir"/etc/s6/sv/soniclogin-log/type
 
-    install -dm755 "$pkgdir"/etc/s6/config
-    install -Dm644 soniclogin.conf "$pkgdir"/etc/s6/config/
+	install -dm755 "$pkgdir"/etc/s6/config
+	install -Dm644 soniclogin.conf "$pkgdir"/etc/s6/config/
 }

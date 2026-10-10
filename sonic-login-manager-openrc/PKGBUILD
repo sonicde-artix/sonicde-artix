@@ -4,18 +4,25 @@ pkgname=sonic-login-manager-openrc
 pkgver=20260903
 pkgrel=1
 pkgdesc='OpenRC init script for sonic-login-manager'
-arch=(any)
+arch=('any')
 url='https://github.com/Sonic-DE/sonic-login-manager'
-license=(GPL-2.0-or-later)
-groups=(sonicde)
-depends=(openrc sonic-login-manager)
-provides=(init-sonic-login-manager init-displaymanager)
-conflicts=(init-sonic-login-manager)
-source=('soniclogin' 'soniclogin.logrotate')
+license=('GPL-2.0-or-later')
+groups=('sonicde')
+depends=(
+	'elogind-openrc'
+	'openrc'
+	'sonic-login-manager'
+)
+provides=('init-sonic-login-manager')
+conflicts=('init-sonic-login-manager')
+source=(
+	'soniclogin'
+	'soniclogin.logrotate'
+)
 sha256sums=('ab3905d664091e5afa1921dcc673e4ccccc672108c0dcf5e44afb84d0b149e85'
             '14d9901ab0be491cb0212c172d5124bf1256040d56240635587d3e75b0e906c4')
 
 package() {
-    install -Dm755 "$srcdir/soniclogin" "$pkgdir/etc/init.d/soniclogin"
-    install -Dm755 "$srcdir/soniclogin.logrotate" "$pkgdir/etc/logrotate.d/soniclogin"
+	install -Dm755 "$srcdir/soniclogin" "$pkgdir/etc/init.d/soniclogin"
+	install -Dm755 "$srcdir/soniclogin.logrotate" "$pkgdir/etc/logrotate.d/soniclogin"
 }
