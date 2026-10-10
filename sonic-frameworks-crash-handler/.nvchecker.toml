@@ -1,0 +1,4 @@
+[sonic-frameworks-crash-handler]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-crash-handler"
+use_max_tag = true

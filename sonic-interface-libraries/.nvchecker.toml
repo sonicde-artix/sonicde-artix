@@ -1,0 +1,4 @@
+[sonic-interface-libraries]
+source = "github"
+github = "Sonic-DE/sonic-interface-libraries"
+use_max_tag = true

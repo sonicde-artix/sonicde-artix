@@ -1,0 +1,4 @@
+[sonic-activities]
+source = "github"
+github = "Sonic-DE/sonic-activities"
+use_max_tag = true

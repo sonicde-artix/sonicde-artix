@@ -1,0 +1,4 @@
+[sonic-desktop-interface]
+source = "github"
+github = "Sonic-DE/sonic-desktop-interface"
+use_max_tag = true

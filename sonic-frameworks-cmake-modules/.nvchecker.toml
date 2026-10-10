@@ -1,0 +1,4 @@
+[sonic-frameworks-cmake-modules]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-cmake-modules"
+use_max_tag = true

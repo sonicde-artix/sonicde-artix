@@ -1,0 +1,4 @@
+[sonic-breeze]
+source = "github"
+github = "Sonic-DE/sonic-breeze"
+use_max_tag = true

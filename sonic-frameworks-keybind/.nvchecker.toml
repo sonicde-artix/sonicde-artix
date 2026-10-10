@@ -1,0 +1,4 @@
+[sonic-frameworks-keybind]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-keybind"
+use_max_tag = true

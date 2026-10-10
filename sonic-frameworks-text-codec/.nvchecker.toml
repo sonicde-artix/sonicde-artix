@@ -1,0 +1,4 @@
+[sonic-frameworks-text-codec]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-text-codec"
+use_max_tag = true

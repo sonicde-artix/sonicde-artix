@@ -1,0 +1,4 @@
+[sonic-frameworks-keyring]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-keyring"
+use_max_tag = true

@@ -1,0 +1,4 @@
+[sonic-frameworks-icon-themes]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-icon-themes"
+use_max_tag = true

@@ -1,0 +1,4 @@
+[sonic-qt-accounts-library]
+source = "github"
+github = "Sonic-DE/sonic-qt-accounts-library"
+use_max_tag = true

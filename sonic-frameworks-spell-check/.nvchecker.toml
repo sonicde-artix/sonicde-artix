@@ -1,0 +1,4 @@
+[sonic-frameworks-spell-check]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-spell-check"
+use_max_tag = true

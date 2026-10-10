@@ -1,0 +1,4 @@
+[sonic-frameworks-color-scheme]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-color-scheme"
+use_max_tag = true

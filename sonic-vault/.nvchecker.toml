@@ -1,0 +1,4 @@
+[sonic-vault]
+source = "github"
+github = "Sonic-DE/sonic-vault"
+use_max_tag = true

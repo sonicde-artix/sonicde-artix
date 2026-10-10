@@ -1,0 +1,4 @@
+[sonic-screen-library]
+source = "github"
+github = "Sonic-DE/sonic-screen-library"
+use_max_tag = true

@@ -1,0 +1,4 @@
+[sonic-system-monitor]
+source = "github"
+github = "Sonic-DE/sonic-system-monitor"
+use_max_tag = true

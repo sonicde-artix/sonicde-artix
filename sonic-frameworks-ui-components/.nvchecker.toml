@@ -1,0 +1,4 @@
+[sonic-frameworks-ui-components]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-ui-components"
+use_max_tag = true

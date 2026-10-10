@@ -1,0 +1,4 @@
+[sonic-workspace]
+source = "github"
+github = "Sonic-DE/sonic-workspace"
+use_max_tag = true

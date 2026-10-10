@@ -1,0 +1,4 @@
+[sonic-workspace-wallpapers]
+source = "github"
+github = "Sonic-DE/sonic-workspace-wallpapers"
+use_max_tag = true

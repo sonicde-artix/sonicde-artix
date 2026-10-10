@@ -1,0 +1,4 @@
+[sonic-frameworks-auth]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-auth"
+use_max_tag = true

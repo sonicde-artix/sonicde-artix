@@ -1,0 +1,4 @@
+[sonic-frameworks-doctools]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-doctools"
+use_max_tag = true

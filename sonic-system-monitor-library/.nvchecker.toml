@@ -1,0 +1,4 @@
+[sonic-system-monitor-library]
+source = "github"
+github = "Sonic-DE/sonic-system-monitor-library"
+use_max_tag = true

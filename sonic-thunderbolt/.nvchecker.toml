@@ -1,0 +1,4 @@
+[sonic-thunderbolt]
+source = "github"
+github = "Sonic-DE/sonic-thunderbolt"
+use_max_tag = true

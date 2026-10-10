@@ -1,0 +1,4 @@
+[sonic-frameworks-idle-tracker]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-idle-tracker"
+use_max_tag = true

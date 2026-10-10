@@ -1,0 +1,4 @@
+[sonic-frameworks-open-collab]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-open-collab"
+use_max_tag = true

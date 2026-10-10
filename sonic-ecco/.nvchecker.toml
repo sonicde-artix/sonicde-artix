@@ -1,0 +1,4 @@
+[sonic-ecco]
+source = "github"
+github = "Sonic-DE/sonic-ecco"
+use_max_tag = true

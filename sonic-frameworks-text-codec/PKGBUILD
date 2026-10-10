@@ -1,0 +1,41 @@
+# Maintainer: callmetango
+# Contributor: Felix Yan <felixonmars@archlinux.org>
+# Contributor: Antonio Rojas <arojas@archlinux.org>
+# Contributor: Andrea Scarpino <andrea@archlinux.org>
+
+pkgname=sonic-frameworks-text-codec
+pkgver=6.30.0
+pkgrel=1
+pkgdesc='Provide a collection of methods to manipulate strings using various encodings'
+arch=('x86_64')
+url='https://github.com/Sonic-DE/sonic-frameworks-text-codec'
+license=(
+	'LGPL-2.0-only'
+	'LGPL-3.0-only'
+)
+depends=(
+	'glibc'
+	'libstdc++'
+	'qt6-base'
+)
+makedepends=(
+	'doxygen'
+	'gperf'
+	'qt6-tools'
+	'sonic-frameworks-cmake-modules'
+)
+provides=('kcodecs')
+conflicts=('kcodecs')
+groups=('sonicde-frameworks')
+source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
+sha256sums=('2a2000f7b4891d7cdf463e28bca3cccc22def3d7700e0d738387aae31677892c')
+
+build() {
+	cmake -B build -S "$pkgname-$pkgver" \
+		-DBUILD_TESTING=OFF
+	cmake --build build
+}
+
+package() {
+	DESTDIR="$pkgdir" cmake --install build
+}

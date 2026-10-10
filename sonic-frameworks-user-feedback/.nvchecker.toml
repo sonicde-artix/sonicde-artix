@@ -1,0 +1,4 @@
+[sonic-frameworks-user-feedback]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-user-feedback"
+use_max_tag = true

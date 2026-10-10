@@ -1,0 +1,40 @@
+# Maintainer: callmetango
+# Contributor: Felix Yan <felixonmars@archlinux.org>
+# Contributor: Antonio Rojas <arojas@archlinux.org>
+# Contributor: Andrea Scarpino <andrea@archlinux.org>
+
+pkgname=sonic-write-daemon
+pkgver=6.7.5
+pkgrel=1
+pkgdesc='SonicDE daemon listening for wall and write messages'
+arch=('x86_64')
+url='https://github.com/Sonic-DE/sonic-write-daemon'
+license=('LGPL-2.0-or-later')
+depends=(
+	'glibc'
+	'libstdc++'
+	'qt6-base'
+	'sonic-frameworks-core-addons'
+	'sonic-frameworks-dbus'
+	'sonic-frameworks-notifications'
+	'sonic-frameworks-pseudo-terminal'
+)
+makedepends=(
+	'sonic-frameworks-cmake-modules'
+	'sonic-frameworks-doctools'
+)
+provides=('kwrited')
+conflicts=('kwrited')
+groups=('sonicde')
+source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
+sha256sums=('1af05d1b647dda81b9f4ee256e4f247b501c6f7f44ee992a26cf7ade6f1bd51c')
+
+build() {
+	cmake -B build -S "$pkgname-$pkgver" \
+		-DBUILD_TESTING=OFF
+	cmake --build build
+}
+
+package() {
+	DESTDIR="$pkgdir" cmake --install build
+}

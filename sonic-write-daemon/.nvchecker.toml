@@ -1,0 +1,4 @@
+[sonic-write-daemon]
+source = "github"
+github = "Sonic-DE/sonic-write-daemon"
+use_max_tag = true

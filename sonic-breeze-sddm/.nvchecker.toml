@@ -1,0 +1,4 @@
+[sonic-breeze-sddm]
+source = "github"
+github = "Sonic-DE/sonic-breeze-sddm"
+use_max_tag = true

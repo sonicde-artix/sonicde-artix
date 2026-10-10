@@ -1,0 +1,4 @@
+[sonic-silver-sddm]
+source = "github"
+github = "Sonic-DE/sonic-silver-sddm"
+use_max_tag = true

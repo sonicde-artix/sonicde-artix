@@ -1,0 +1,4 @@
+[sonic-oxygen-sounds]
+source = "github"
+github = "Sonic-DE/sonic-oxygen-sounds"
+use_max_tag = true

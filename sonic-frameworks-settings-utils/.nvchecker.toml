@@ -1,0 +1,4 @@
+[sonic-frameworks-settings-utils]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-settings-utils"
+use_max_tag = true

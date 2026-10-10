@@ -1,0 +1,4 @@
+[sonic-frameworks-networkmanager]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-networkmanager"
+use_max_tag = true

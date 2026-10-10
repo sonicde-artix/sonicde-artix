@@ -1,0 +1,4 @@
+[sonic-silver-icons]
+source = "github"
+github = "Sonic-DE/sonic-silver-icons"
+use_max_tag = true

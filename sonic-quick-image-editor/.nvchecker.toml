@@ -1,0 +1,4 @@
+[sonic-quick-image-editor]
+source = "github"
+github = "Sonic-DE/sonic-quick-image-editor"
+use_max_tag = true

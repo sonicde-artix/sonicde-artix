@@ -1,0 +1,4 @@
+[sonic-screenlocker]
+source = "github"
+github = "Sonic-DE/sonic-screenlocker"
+use_max_tag = true

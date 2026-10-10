@@ -1,0 +1,4 @@
+[sonic-activity-manager-daemon]
+source = "github"
+github = "Sonic-DE/sonic-activity-manager-daemon"
+use_max_tag = true

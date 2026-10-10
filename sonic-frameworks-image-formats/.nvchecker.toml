@@ -1,0 +1,4 @@
+[sonic-frameworks-image-formats]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-image-formats"
+use_max_tag = true

@@ -1,0 +1,4 @@
+[sonic-audio-applet-pulse]
+source = "github"
+github = "Sonic-DE/sonic-audio-applet-pulse"
+use_max_tag = true

@@ -1,0 +1,4 @@
+[sonic-pyside-setup]
+source = "github"
+github = "Sonic-DE/sonic-pyside-setup"
+use_max_tag = true

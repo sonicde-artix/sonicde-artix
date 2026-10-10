@@ -1,0 +1,4 @@
+[sonic-crypto-library]
+source = "github"
+github = "Sonic-DE/sonic-crypto-library"
+use_max_tag = true

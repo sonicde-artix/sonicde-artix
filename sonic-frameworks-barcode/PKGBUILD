@@ -1,0 +1,45 @@
+# Maintainer: callmetango
+# Contributor: Felix Yan <felixonmars@archlinux.org>
+# Contributor: Antonio Rojas <arojas@archlinux.org>
+# Contributor: Andrea Scarpino <andrea@archlinux.org>
+
+pkgname=sonic-frameworks-barcode
+pkgver=6.30.0
+pkgrel=1
+pkgdesc='A barcode API to produce QRCode barcodes and DataMatrix barcodes'
+arch=('x86_64')
+url='https://github.com/Sonic-DE/sonic-frameworks-barcode'
+license=('MIT')
+depends=(
+	'glibc'
+	'libdmtx'
+	'libgcc'
+	'libstdc++'
+	'qrencode'
+	'qt6-base'
+	'qt6-multimedia'
+	'zxing-cpp'
+)
+makedepends=(
+	'doxygen'
+	'qt6-declarative'
+	'qt6-tools'
+	'sonic-frameworks-cmake-modules'
+)
+optdepends=('qt6-declarative: QML bindings')
+provides=('prison')
+conflicts=('prison')
+groups=('sonicde-frameworks')
+source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
+sha256sums=('059f1a11d838f69a3d2f3a6e179e8fbda8c07f9224d4b252761169f9a9b40215')
+
+build() {
+	cmake -B build -S "$pkgname-$pkgver" \
+		-DBUILD_TESTING=OFF
+	cmake --build build
+}
+
+package() {
+	DESTDIR="$pkgdir" cmake --install build
+	install -Dm644 $pkgname-$pkgver/LICENSES/MIT.txt -t "$pkgdir"/usr/share/licenses/$pkgname/
+}

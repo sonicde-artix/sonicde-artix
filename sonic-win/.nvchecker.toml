@@ -1,0 +1,4 @@
+[sonic-win]
+source = "github"
+github = "Sonic-DE/sonic-win"
+use_max_tag = true

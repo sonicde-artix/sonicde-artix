@@ -1,0 +1,4 @@
+[sonic-pipewire]
+source = "github"
+github = "Sonic-DE/sonic-pipewire"
+use_max_tag = true

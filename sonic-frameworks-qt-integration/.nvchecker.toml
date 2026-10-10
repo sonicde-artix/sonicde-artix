@@ -1,0 +1,4 @@
+[sonic-frameworks-qt-integration]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-qt-integration"
+use_max_tag = true

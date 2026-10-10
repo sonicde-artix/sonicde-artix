@@ -1,0 +1,4 @@
+[sonic-silver-gtk]
+source = "github"
+github = "Sonic-DE/sonic-silver-gtk"
+use_max_tag = true

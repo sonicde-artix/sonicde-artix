@@ -1,0 +1,4 @@
+[sonic-accounts-integration]
+source = "github"
+github = "Sonic-DE/sonic-accounts-integration"
+use_max_tag = true

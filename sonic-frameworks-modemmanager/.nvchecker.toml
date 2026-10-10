@@ -1,0 +1,4 @@
+[sonic-frameworks-modemmanager]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-modemmanager"
+use_max_tag = true

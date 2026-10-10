@@ -1,0 +1,4 @@
+[sonic-frameworks-quick-ui]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-quick-ui"
+use_max_tag = true

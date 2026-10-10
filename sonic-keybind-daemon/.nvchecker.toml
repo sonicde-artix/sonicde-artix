@@ -1,0 +1,4 @@
+[sonic-keybind-daemon]
+source = "github"
+github = "Sonic-DE/sonic-keybind-daemon"
+use_max_tag = true

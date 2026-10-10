@@ -1,0 +1,4 @@
+[sonic-partition-manager]
+source = "github"
+github = "Sonic-DE/sonic-partition-manager"
+use_max_tag = true

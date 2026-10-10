@@ -1,0 +1,4 @@
+[sonic-terminal-tools]
+source = "github"
+github = "Sonic-DE/sonic-terminal-tools"
+use_max_tag = true

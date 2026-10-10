@@ -1,0 +1,4 @@
+[sonic-frameworks-windowsystem]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-windowsystem"
+use_max_tag = true

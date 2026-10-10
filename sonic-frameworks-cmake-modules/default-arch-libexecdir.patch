@@ -1,0 +1,32 @@
+From 2daf48f7b283b610ab4e31b0eb9f7e359931126d Mon Sep 17 00:00:00 2001
+From: Joseph Crowell <joseph.w.crowell@gmail.com>
+Date: Tue, 29 Sep 2026 21:08:09 +1000
+Subject: [PATCH] set LIBEXEC_INSTALL_DIR to LIBDIR on Arch derivatives
+
+---
+ kde-modules/KDEInstallDirsCommon.cmake | 12 +++++++++---
+ 1 file changed, 9 insertions(+), 3 deletions(-)
+
+diff --git a/kde-modules/KDEInstallDirsCommon.cmake b/kde-modules/KDEInstallDirsCommon.cmake
+index 0b35e10f..bde0897c 100644
+--- a/kde-modules/KDEInstallDirsCommon.cmake
++++ b/kde-modules/KDEInstallDirsCommon.cmake
+@@ -277,9 +277,15 @@ if(WIN32)
+         "executables for internal use by programs and libraries"
+         LIBEXEC_INSTALL_DIR)
+ else()
+-    _define_relative(LIBEXECDIR LIBDIR "libexec"
+-        "executables for internal use by programs and libraries"
+-        LIBEXEC_INSTALL_DIR)
++    if(IS_ARCH_FAMILY)
++        _define_relative(LIBEXECDIR LIBDIR ""
++            "executables for internal use by programs and libraries"
++            LIBEXEC_INSTALL_DIR)
++    else()
++        _define_relative(LIBEXECDIR LIBDIR "libexec"
++            "executables for internal use by programs and libraries"
++            LIBEXEC_INSTALL_DIR)
++    endif()
+ endif()
+ 
+ _define_relative(CMAKEPACKAGEDIR LIBDIR "cmake"

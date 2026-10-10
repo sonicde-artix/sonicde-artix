@@ -1,0 +1,59 @@
+# Maintainer: callmetango
+# Contributor: Felix Yan <felixonmars@archlinux.org>
+# Contributor: Antonio Rojas <arojas@archlinux.org>
+# Contributor: Andrea Scarpino <andrea@archlinux.org>
+
+pkgname=sonic-frameworks-file-metadata
+pkgver=6.30.0
+pkgrel=1
+pkgdesc='A library for extracting file metadata'
+arch=('x86_64')
+url='https://github.com/Sonic-DE/sonic-frameworks-file-metadata'
+license=(
+	'LGPL-2.0-only'
+	'LGPL-3.0-only'
+)
+depends=(
+	'ebook-tools'
+	'exiv2'
+	'ffmpeg'
+	'glibc'
+	'libgcc'
+	'libstdc++'
+	'poppler-qt6'
+	'qt6-base'
+	'sonic-frameworks-archive'
+	'sonic-frameworks-core-addons'
+	'sonic-frameworks-internationalization'
+	'sonic-frameworks-settings'
+	'sonic-frameworks-text-codec'
+	'taglib'
+)
+optdepends=(
+	'catdoc: Extract text from Office 98 files'
+	'kdegraphics-mobipocket: MOBI extractor'
+	'libappimage: AppImage extractor'
+)
+makedepends=(
+	'catdoc'
+	'doxygen'
+	'kdegraphics-mobipocket'
+	'libappimage'
+	'qt6-tools'
+	'sonic-frameworks-cmake-modules'
+)
+provides=('kfilemetadata')
+conflicts=('kfilemetadata')
+groups=('sonicde-frameworks')
+source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
+sha256sums=('fe2e2a9fef2cf127f612b33f4597aaccb57b158311702578f4b1542583392756')
+
+build() {
+	cmake -B build -S "$pkgname-$pkgver" \
+		-DBUILD_TESTING=OFF
+	cmake --build build
+}
+
+package() {
+	DESTDIR="$pkgdir" cmake --install build
+}

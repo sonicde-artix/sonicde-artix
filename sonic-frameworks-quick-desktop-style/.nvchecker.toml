@@ -1,0 +1,4 @@
+[sonic-frameworks-quick-desktop-style]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-quick-desktop-style"
+use_max_tag = true

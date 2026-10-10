@@ -1,0 +1,4 @@
+[sonic-frameworks-io-fuse]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-io-fuse"
+use_max_tag = true

@@ -1,0 +1,4 @@
+[sonic-frameworks-status-notification]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-status-notification"
+use_max_tag = true

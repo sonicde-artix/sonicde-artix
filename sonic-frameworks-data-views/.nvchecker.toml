@@ -1,0 +1,4 @@
+[sonic-frameworks-data-views]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-data-views"
+use_max_tag = true

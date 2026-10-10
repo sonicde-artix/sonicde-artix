@@ -1,0 +1,4 @@
+[sonic-frameworks-svg]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-svg"
+use_max_tag = true

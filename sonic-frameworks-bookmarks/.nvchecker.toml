@@ -1,0 +1,4 @@
+[sonic-frameworks-bookmarks]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-bookmarks"
+use_max_tag = true

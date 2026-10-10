@@ -1,0 +1,4 @@
+[sonic-bluetooth-runtime]
+source = "github"
+github = "Sonic-DE/sonic-bluetooth-runtime"
+use_max_tag = true

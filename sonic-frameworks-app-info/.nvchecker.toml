@@ -1,0 +1,4 @@
+[sonic-frameworks-app-info]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-app-info"
+use_max_tag = true

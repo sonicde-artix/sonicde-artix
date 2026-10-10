@@ -1,0 +1,4 @@
+[sonic-night-light]
+source = "github"
+github = "Sonic-DE/sonic-night-light"
+use_max_tag = true

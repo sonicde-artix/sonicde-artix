@@ -1,0 +1,4 @@
+[sonic-browser-integration]
+source = "github"
+github = "Sonic-DE/sonic-browser-integration"
+use_max_tag = true

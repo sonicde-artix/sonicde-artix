@@ -1,0 +1,4 @@
+[sonic-frameworks-root-shell]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-root-shell"
+use_max_tag = true

@@ -1,0 +1,4 @@
+[sonic-frameworks-addons-downloader]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-addons-downloader"
+use_max_tag = true

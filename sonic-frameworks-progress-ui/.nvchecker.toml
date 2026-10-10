@@ -1,0 +1,4 @@
+[sonic-frameworks-progress-ui]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-progress-ui"
+use_max_tag = true

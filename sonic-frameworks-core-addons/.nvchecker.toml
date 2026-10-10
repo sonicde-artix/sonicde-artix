@@ -1,0 +1,4 @@
+[sonic-frameworks-core-addons]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-core-addons"
+use_max_tag = true

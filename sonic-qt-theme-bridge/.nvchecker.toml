@@ -1,0 +1,4 @@
+[sonic-qt-theme-bridge]
+source = "github"
+github = "Sonic-DE/sonic-qt-theme-bridge"
+use_max_tag = true

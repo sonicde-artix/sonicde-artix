@@ -1,0 +1,4 @@
+[sonic-frameworks-zeroconf]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-zeroconf"
+use_max_tag = true

@@ -1,0 +1,45 @@
+# Maintainer: callmetango
+# Contributor: Felix Yan <felixonmars@archlinux.org>
+# Contributor: Antonio Rojas <arojas@archlinux.org>
+# Contributor: Andrea Scarpino <andrea@archlinux.org>
+# Contributor: schuay <jakob.gruber@gmail.com>
+
+pkgname=sonic-ssh-password-prompt
+pkgver=6.7.5
+pkgrel=1
+pkgdesc='ssh-add helper that uses the Sonic keyring and kpassworddialog'
+url='https://github.com/Sonic-DE/sonic-ssh-password-prompt'
+license=('GPL-2.0-or-later')
+arch=('x86_64')
+depends=(
+	'glibc'
+	'libstdc++'
+	'qt6-base'
+	'qtkeychain-qt6'
+	'sonic-frameworks-core-addons'
+	'sonic-frameworks-internationalization'
+	'sonic-frameworks-widgets-addons'
+)
+makedepends=(
+	'sonic-frameworks-cmake-modules'
+	'sonic-frameworks-doctools'
+)
+provides=(
+	'ksshaskpass'
+	'x11-ssh-askpass'
+)
+conflicts=('ksshaskpass')
+groups=('sonicde')
+source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
+install=$pkgname.install
+sha256sums=('e1baf0e9fd32c2b20bbfd43ff9bdb5b56040a04dc66f6e0fa4671af788e5a419')
+
+build() {
+	cmake -B build -S "$pkgname-$pkgver" \
+		-DBUILD_TESTING=OFF
+	cmake --build build
+}
+
+package() {
+	DESTDIR="$pkgdir" cmake --install build
+}

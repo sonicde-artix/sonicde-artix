@@ -1,0 +1,4 @@
+[sonic-frameworks-syntax-highlighting]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-syntax-highlighting"
+use_max_tag = true

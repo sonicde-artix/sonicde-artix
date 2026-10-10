@@ -1,0 +1,4 @@
+[sonic-firewall]
+source = "github"
+github = "Sonic-DE/sonic-firewall"
+use_max_tag = true

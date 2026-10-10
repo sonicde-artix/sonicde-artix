@@ -1,0 +1,4 @@
+[sonic-file-search-ui]
+source = "github"
+github = "Sonic-DE/sonic-file-search-ui"
+use_max_tag = true

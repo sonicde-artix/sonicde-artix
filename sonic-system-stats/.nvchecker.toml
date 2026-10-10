@@ -1,0 +1,4 @@
+[sonic-system-stats]
+source = "github"
+github = "Sonic-DE/sonic-system-stats"
+use_max_tag = true

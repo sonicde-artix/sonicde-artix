@@ -1,0 +1,4 @@
+[sonic-drawing-tablet]
+source = "github"
+github = "Sonic-DE/sonic-drawing-tablet"
+use_max_tag = true

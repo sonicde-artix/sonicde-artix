@@ -1,0 +1,4 @@
+[sonic-frameworks-quick-charts]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-quick-charts"
+use_max_tag = true

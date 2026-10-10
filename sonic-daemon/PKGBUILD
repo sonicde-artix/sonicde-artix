@@ -1,0 +1,44 @@
+# Maintainer: callmetango
+# Contributor: Felix Yan <felixonmars@archlinux.org>
+# Contributor: Antonio Rojas <arojas@archlinux.org>
+# Contributor: Andrea Scarpino <andrea@archlinux.org>
+
+pkgname=sonic-daemon
+pkgver=6.30.0
+pkgrel=1
+pkgdesc='Extensible daemon for providing system level services'
+arch=('x86_64')
+url='https://github.com/Sonic-DE/sonic-daemon'
+license=(
+	'LGPL-2.0-only'
+	'LGPL-3.0-only'
+)
+depends=(
+	'glibc'
+	'libstdc++'
+	'qt6-base'
+	'sonic-frameworks-app-info'
+	'sonic-frameworks-core-addons'
+	'sonic-frameworks-crash-handler'
+	'sonic-frameworks-dbus'
+	'sonic-frameworks-settings'
+)
+makedepends=(
+	'sonic-frameworks-cmake-modules'
+	'sonic-frameworks-doctools'
+)
+provides=('kded')
+conflicts=('kded')
+groups=('sonicde-frameworks')
+source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
+sha256sums=('1790dbd6f71ea3f0693331e2390a602ac284968ae497925a31b26a875602bd98')
+
+build() {
+	cmake -B build -S "$pkgname-$pkgver" \
+		-DBUILD_TESTING=OFF
+	cmake --build build
+}
+
+package() {
+	DESTDIR="$pkgdir" cmake --install build
+}

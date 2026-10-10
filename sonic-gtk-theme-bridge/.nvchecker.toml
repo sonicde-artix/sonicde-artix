@@ -1,0 +1,4 @@
+[sonic-gtk-theme-bridge]
+source = "github"
+github = "Sonic-DE/sonic-gtk-theme-bridge"
+use_max_tag = true

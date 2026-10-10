@@ -1,0 +1,4 @@
+[sonic-frameworks-bluetooth]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-bluetooth"
+use_max_tag = true

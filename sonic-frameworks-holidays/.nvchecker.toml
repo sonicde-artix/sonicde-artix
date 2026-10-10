@@ -1,0 +1,4 @@
+[sonic-frameworks-holidays]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-holidays"
+use_max_tag = true

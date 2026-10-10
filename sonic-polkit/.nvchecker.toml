@@ -1,0 +1,4 @@
+[sonic-polkit]
+source = "github"
+github = "Sonic-DE/sonic-polkit"
+use_max_tag = true

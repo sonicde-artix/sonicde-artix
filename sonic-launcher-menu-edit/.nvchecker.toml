@@ -1,0 +1,4 @@
+[sonic-launcher-menu-edit]
+source = "github"
+github = "Sonic-DE/sonic-launcher-menu-edit"
+use_max_tag = true

@@ -1,0 +1,4 @@
+[sonic-frameworks-text-editor]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-text-editor"
+use_max_tag = true

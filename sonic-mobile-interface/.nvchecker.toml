@@ -1,0 +1,4 @@
+[sonic-mobile-interface]
+source = "github"
+github = "Sonic-DE/sonic-mobile-interface"
+use_max_tag = true

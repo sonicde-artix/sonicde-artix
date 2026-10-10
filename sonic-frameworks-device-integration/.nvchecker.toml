@@ -1,0 +1,4 @@
+[sonic-frameworks-device-integration]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-device-integration"
+use_max_tag = true

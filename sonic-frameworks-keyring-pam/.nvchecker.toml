@@ -1,0 +1,4 @@
+[sonic-frameworks-keyring-pam]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-keyring-pam"
+use_max_tag = true

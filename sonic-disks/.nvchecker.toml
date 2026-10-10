@@ -1,0 +1,4 @@
+[sonic-disks]
+source = "github"
+github = "Sonic-DE/sonic-disks"
+use_max_tag = true

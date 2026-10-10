@@ -1,0 +1,4 @@
+[sonic-frameworks-unit-conversion]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-unit-conversion"
+use_max_tag = true

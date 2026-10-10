@@ -1,0 +1,4 @@
+[sonic-ssh-password-prompt]
+source = "github"
+github = "Sonic-DE/sonic-ssh-password-prompt"
+use_max_tag = true

@@ -1,0 +1,4 @@
+[xdg-desktop-portal-sonicde]
+source = "github"
+github = "Sonic-DE/xdg-desktop-portal-sonicde"
+use_max_tag = true

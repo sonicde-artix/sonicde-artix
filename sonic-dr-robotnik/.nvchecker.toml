@@ -1,0 +1,4 @@
+[sonic-dr-robotnik]
+source = "github"
+github = "Sonic-DE/sonic-dr-robotnik"
+use_max_tag = true

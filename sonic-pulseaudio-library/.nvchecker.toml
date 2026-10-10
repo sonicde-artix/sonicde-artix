@@ -1,0 +1,4 @@
+[sonic-pulseaudio-library]
+source = "github"
+github = "Sonic-DE/sonic-pulseaudio-library"
+use_max_tag = true

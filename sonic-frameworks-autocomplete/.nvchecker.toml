@@ -1,0 +1,4 @@
+[sonic-frameworks-autocomplete]
+source = "github"
+github = "Sonic-DE/sonic-frameworks-autocomplete"
+use_max_tag = true

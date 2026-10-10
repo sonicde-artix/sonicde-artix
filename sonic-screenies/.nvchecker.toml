@@ -1,0 +1,4 @@
+[sonic-screenies]
+source = "github"
+github = "Sonic-DE/sonic-screenies"
+use_max_tag = true

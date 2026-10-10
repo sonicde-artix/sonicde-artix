@@ -1,0 +1,4 @@
+[sonic-oxygen]
+source = "github"
+github = "Sonic-DE/sonic-oxygen"
+use_max_tag = true
