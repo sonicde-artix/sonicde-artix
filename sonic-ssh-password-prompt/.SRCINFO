@@ -1,0 +1,25 @@
+pkgbase = sonic-ssh-password-prompt
+	pkgdesc = ssh-add helper that uses the Sonic keyring and kpassworddialog
+	pkgver = 6.7.5
+	pkgrel = 1
+	url = https://github.com/Sonic-DE/sonic-ssh-password-prompt
+	install = sonic-ssh-password-prompt.install
+	arch = x86_64
+	groups = sonicde
+	license = GPL-2.0-or-later
+	makedepends = sonic-frameworks-cmake-modules
+	makedepends = sonic-frameworks-doctools
+	depends = glibc
+	depends = libstdc++
+	depends = qt6-base
+	depends = qtkeychain-qt6
+	depends = sonic-frameworks-core-addons
+	depends = sonic-frameworks-internationalization
+	depends = sonic-frameworks-widgets-addons
+	provides = ksshaskpass
+	provides = x11-ssh-askpass
+	conflicts = ksshaskpass
+	source = sonic-ssh-password-prompt-6.7.5.tar.gz::https://github.com/Sonic-DE/sonic-ssh-password-prompt/archive/refs/tags/6.7.5.tar.gz
+	sha256sums = e1baf0e9fd32c2b20bbfd43ff9bdb5b56040a04dc66f6e0fa4671af788e5a419
+
+pkgname = sonic-ssh-password-prompt

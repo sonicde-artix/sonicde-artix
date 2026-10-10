@@ -1,0 +1,18 @@
+pkgbase = sonic-login-manager-dinit
+	pkgdesc = dinit service scripts for sonic-login-manager
+	pkgver = 20260601
+	pkgrel = 3
+	url = https://github.com/Sonic-DE/sonic-login-manager
+	arch = any
+	groups = sonicde
+	license = BSD
+	depends = dinit
+	depends = elogind-dinit
+	depends = sonic-login-manager
+	provides = init-displaymanager
+	provides = init-sonic-login-manager
+	conflicts = init-sonic-login-manager
+	source = soniclogin
+	sha256sums = adef9799d1d6367a8b46609ef0ef31f3333c08b699cfa01c22d4bd7695de7347
+
+pkgname = sonic-login-manager-dinit

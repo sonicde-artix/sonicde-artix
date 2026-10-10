@@ -1,0 +1,22 @@
+pkgbase = sonic-frameworks-modemmanager
+	pkgdesc = Qt wrapper for ModemManager DBus API
+	pkgver = 6.30.0
+	pkgrel = 1
+	url = https://github.com/Sonic-DE/sonic-frameworks-modemmanager
+	arch = x86_64
+	groups = sonicde-frameworks
+	license = LGPL-2.0-only
+	license = LGPL-3.0-only
+	makedepends = doxygen
+	makedepends = qt6-tools
+	makedepends = sonic-frameworks-cmake-modules
+	depends = glibc
+	depends = libstdc++
+	depends = modemmanager
+	depends = qt6-base
+	provides = modemmanager-qt
+	conflicts = modemmanager-qt
+	source = sonic-frameworks-modemmanager-6.30.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-modemmanager/archive/refs/tags/6.30.0.tar.gz
+	sha256sums = 2b2af2b0d42b923e01c4a0d22d5af9b1b284ef5ae533bb01f1acee90a9a5154e
+
+pkgname = sonic-frameworks-modemmanager

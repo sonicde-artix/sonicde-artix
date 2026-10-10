@@ -1,0 +1,21 @@
+pkgbase = sonic-frameworks-open-collab
+	pkgdesc = Qt library that implements the Open Collaboration Services API
+	pkgver = 6.30.0
+	pkgrel = 3
+	url = https://github.com/Sonic-DE/sonic-frameworks-open-collab
+	arch = x86_64
+	groups = sonicde-frameworks
+	license = LGPL-2.0-only
+	license = LGPL-3.0-only
+	makedepends = doxygen
+	makedepends = qt6-tools
+	makedepends = sonic-frameworks-cmake-modules
+	depends = glibc
+	depends = libstdc++
+	depends = qt6-base
+	provides = attica
+	conflicts = attica
+	source = sonic-frameworks-open-collab-6.30.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-open-collab/archive/refs/tags/6.30.0.tar.gz
+	sha256sums = c1df999d64e83ccce277d1c75ce8376a0dd668b98b9815d9470bf114e88ae206
+
+pkgname = sonic-frameworks-open-collab

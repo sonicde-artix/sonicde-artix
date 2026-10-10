@@ -1,0 +1,19 @@
+pkgbase = sonic-login-manager-openrc
+	pkgdesc = OpenRC init script for sonic-login-manager
+	pkgver = 20260903
+	pkgrel = 1
+	url = https://github.com/Sonic-DE/sonic-login-manager
+	arch = any
+	groups = sonicde
+	license = GPL-2.0-or-later
+	depends = elogind-openrc
+	depends = openrc
+	depends = sonic-login-manager
+	provides = init-sonic-login-manager
+	conflicts = init-sonic-login-manager
+	source = soniclogin
+	source = soniclogin.logrotate
+	sha256sums = ab3905d664091e5afa1921dcc673e4ccccc672108c0dcf5e44afb84d0b149e85
+	sha256sums = 14d9901ab0be491cb0212c172d5124bf1256040d56240635587d3e75b0e906c4
+
+pkgname = sonic-login-manager-openrc

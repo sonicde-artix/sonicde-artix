@@ -1,0 +1,27 @@
+pkgbase = sonic-frameworks-text-widgets
+	pkgdesc = Advanced text editing widgets
+	pkgver = 6.30.0
+	pkgrel = 1
+	url = https://github.com/Sonic-DE/sonic-frameworks-text-widgets
+	arch = x86_64
+	groups = sonicde-frameworks
+	license = LGPL-2.0-only
+	license = LGPL-3.0-only
+	makedepends = doxygen
+	makedepends = qt6-tools
+	makedepends = sonic-frameworks-cmake-modules
+	depends = glibc
+	depends = libstdc++
+	depends = qt6-base
+	depends = qt6-speech
+	depends = sonic-frameworks-autocomplete
+	depends = sonic-frameworks-internationalization
+	depends = sonic-frameworks-settings
+	depends = sonic-frameworks-spell-check
+	depends = sonic-frameworks-widgets-addons
+	provides = ktextwidgets
+	conflicts = ktextwidgets
+	source = sonic-frameworks-text-widgets-6.30.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-text-widgets/archive/refs/tags/6.30.0.tar.gz
+	sha256sums = e5949c8cf0fd027a74db2d600b9d4005f071a302eabc7b5fba65369538bd2d9e
+
+pkgname = sonic-frameworks-text-widgets

@@ -1,0 +1,26 @@
+pkgbase = sonicde-meta-s6
+	pkgdesc = S6 service stack for SonicDE on Artix Linux
+	pkgver = 6.7
+	pkgrel = 1
+	url = https://github.com/Sonic-DE
+	arch = any
+	groups = sonicde
+	license = None
+	depends = bluez-s6
+	depends = dbus-s6
+	depends = elogind-s6
+	depends = esettingsd
+	depends = esysusers
+	depends = etmpfiles
+	depends = networkmanager-s6
+	depends = pipewire-pulse
+	depends = sonicde-meta
+	depends = wireplumber
+	optdepends = bolt-s6: Thunderbolt device management
+	optdepends = firewalld-s6: firewalld backend for Sonic Firewall
+	optdepends = ufw-s6: UFW backend for Sonic Firewall
+	provides = init-sonicde-meta
+	conflicts = init-sonicde-meta
+	options = !debug
+
+pkgname = sonicde-meta-s6

@@ -1,0 +1,26 @@
+pkgbase = sonic-file-search-ui
+	pkgdesc = A dedicated search application for SonicDE
+	pkgver = 6.7.5
+	pkgrel = 1
+	url = https://github.com/Sonic-DE/sonic-file-search-ui
+	arch = x86_64
+	groups = sonicde
+	license = LGPL-2.0-or-later
+	makedepends = sonic-frameworks-cmake-modules
+	makedepends = sonic-frameworks-doctools
+	depends = glibc
+	depends = libstdc++
+	depends = qt6-base
+	depends = qt6-declarative
+	depends = sonic-frameworks-core-addons
+	depends = sonic-frameworks-quick-ui
+	depends = sonic-frameworks-runner
+	depends = sonic-frameworks-settings
+	depends = sonic-frameworks-svg
+	depends = sonic-interface-libraries
+	provides = milou
+	conflicts = milou
+	source = sonic-file-search-ui-6.7.5.tar.gz::https://github.com/Sonic-DE/sonic-file-search-ui/archive/refs/tags/6.7.5.tar.gz
+	sha256sums = 064a1b472320cf3fd18fc2f56384774c496b89552121f2b9c7bfae3d99c6c304
+
+pkgname = sonic-file-search-ui

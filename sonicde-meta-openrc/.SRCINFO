@@ -1,0 +1,26 @@
+pkgbase = sonicde-meta-openrc
+	pkgdesc = OpenRC service stack for SonicDE on Artix Linux
+	pkgver = 6.7
+	pkgrel = 1
+	url = https://github.com/Sonic-DE
+	arch = any
+	groups = sonicde
+	license = None
+	depends = bluez-openrc
+	depends = dbus-openrc
+	depends = elogind-openrc
+	depends = esysusers
+	depends = etmpfiles
+	depends = networkmanager-openrc
+	depends = openrc-settingsd
+	depends = pipewire-pulse-openrc
+	depends = sonicde-meta
+	depends = wireplumber-openrc
+	optdepends = bolt-openrc: Thunderbolt device management
+	optdepends = firewalld-openrc: firewalld backend for Sonic Firewall
+	optdepends = ufw-openrc: UFW backend for Sonic Firewall
+	provides = init-sonicde-meta
+	conflicts = init-sonicde-meta
+	options = !debug
+
+pkgname = sonicde-meta-openrc

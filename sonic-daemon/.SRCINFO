@@ -1,0 +1,25 @@
+pkgbase = sonic-daemon
+	pkgdesc = Extensible daemon for providing system level services
+	pkgver = 6.30.0
+	pkgrel = 1
+	url = https://github.com/Sonic-DE/sonic-daemon
+	arch = x86_64
+	groups = sonicde-frameworks
+	license = LGPL-2.0-only
+	license = LGPL-3.0-only
+	makedepends = sonic-frameworks-cmake-modules
+	makedepends = sonic-frameworks-doctools
+	depends = glibc
+	depends = libstdc++
+	depends = qt6-base
+	depends = sonic-frameworks-app-info
+	depends = sonic-frameworks-core-addons
+	depends = sonic-frameworks-crash-handler
+	depends = sonic-frameworks-dbus
+	depends = sonic-frameworks-settings
+	provides = kded
+	conflicts = kded
+	source = sonic-daemon-6.30.0.tar.gz::https://github.com/Sonic-DE/sonic-daemon/archive/refs/tags/6.30.0.tar.gz
+	sha256sums = 1790dbd6f71ea3f0693331e2390a602ac284968ae497925a31b26a875602bd98
+
+pkgname = sonic-daemon

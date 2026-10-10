@@ -1,0 +1,22 @@
+pkgbase = sonic-frameworks-text-codec
+	pkgdesc = Provide a collection of methods to manipulate strings using various encodings
+	pkgver = 6.30.0
+	pkgrel = 1
+	url = https://github.com/Sonic-DE/sonic-frameworks-text-codec
+	arch = x86_64
+	groups = sonicde-frameworks
+	license = LGPL-2.0-only
+	license = LGPL-3.0-only
+	makedepends = doxygen
+	makedepends = gperf
+	makedepends = qt6-tools
+	makedepends = sonic-frameworks-cmake-modules
+	depends = glibc
+	depends = libstdc++
+	depends = qt6-base
+	provides = kcodecs
+	conflicts = kcodecs
+	source = sonic-frameworks-text-codec-6.30.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-text-codec/archive/refs/tags/6.30.0.tar.gz
+	sha256sums = 2a2000f7b4891d7cdf463e28bca3cccc22def3d7700e0d738387aae31677892c
+
+pkgname = sonic-frameworks-text-codec

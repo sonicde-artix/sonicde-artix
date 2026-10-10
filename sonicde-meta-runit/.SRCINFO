@@ -1,0 +1,26 @@
+pkgbase = sonicde-meta-runit
+	pkgdesc = Runit service stack for SonicDE on Artix Linux
+	pkgver = 6.7
+	pkgrel = 1
+	url = https://github.com/Sonic-DE
+	arch = any
+	groups = sonicde
+	license = None
+	depends = bluez-runit
+	depends = dbus-runit
+	depends = elogind-runit
+	depends = esettingsd
+	depends = esysusers
+	depends = etmpfiles
+	depends = networkmanager-runit
+	depends = pipewire-pulse
+	depends = sonicde-meta
+	depends = wireplumber
+	optdepends = bolt-runit: Thunderbolt device management
+	optdepends = firewalld-runit: firewalld backend for Sonic Firewall
+	optdepends = ufw-runit: UFW backend for Sonic Firewall
+	provides = init-sonicde-meta
+	conflicts = init-sonicde-meta
+	options = !debug
+
+pkgname = sonicde-meta-runit

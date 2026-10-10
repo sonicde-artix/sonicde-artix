@@ -1,0 +1,27 @@
+pkgbase = sonic-thunderbolt
+	pkgdesc = SonicDE integration for controlling Thunderbolt devices
+	pkgver = 6.7.5
+	pkgrel = 1
+	url = https://github.com/Sonic-DE/sonic-thunderbolt
+	arch = x86_64
+	groups = sonicde
+	license = LGPL-2.0-or-later
+	makedepends = sonic-frameworks-cmake-modules
+	depends = bolt
+	depends = glibc
+	depends = libgcc
+	depends = libstdc++
+	depends = qt6-base
+	depends = qt6-declarative
+	depends = sonic-frameworks-core-addons
+	depends = sonic-frameworks-dbus
+	depends = sonic-frameworks-internationalization
+	depends = sonic-frameworks-notifications
+	depends = sonic-frameworks-quick-ui
+	depends = sonic-frameworks-settings-utils
+	provides = plasma-thunderbolt
+	conflicts = plasma-thunderbolt
+	source = sonic-thunderbolt-6.7.5.tar.gz::https://github.com/Sonic-DE/sonic-thunderbolt/archive/refs/tags/6.7.5.tar.gz
+	sha256sums = a721de6caef2cc351fe4e3fa3c6260b1235e4a49c3c4650fcf91777c44bd8997
+
+pkgname = sonic-thunderbolt

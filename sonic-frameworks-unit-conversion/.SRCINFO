@@ -1,0 +1,27 @@
+pkgbase = sonic-frameworks-unit-conversion
+	pkgdesc = Support for unit conversion
+	pkgver = 6.30.0
+	pkgrel = 1
+	url = https://github.com/Sonic-DE/sonic-frameworks-unit-conversion
+	arch = x86_64
+	groups = sonicde-frameworks
+	license = LGPL-2.0-only
+	license = LGPL-3.0-only
+	makedepends = doxygen
+	makedepends = python-build
+	makedepends = python-setuptools
+	makedepends = qt6-tools
+	makedepends = sonic-frameworks-cmake-modules
+	makedepends = sonic-pyside6
+	makedepends = sonic-shiboken6-generator
+	depends = glibc
+	depends = libstdc++
+	depends = qt6-base
+	depends = sonic-frameworks-internationalization
+	optdepends = sonic-pyside6: Python bindings
+	provides = kunitconversion
+	conflicts = kunitconversion
+	source = sonic-frameworks-unit-conversion-6.30.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-unit-conversion/archive/refs/tags/6.30.0.tar.gz
+	sha256sums = 3c0e20451d59d3efe120e9e7625e193719ed176bc5279614ecdb3bd1798130e3
+
+pkgname = sonic-frameworks-unit-conversion

@@ -1,0 +1,24 @@
+pkgbase = sonic-frameworks-cmake-modules
+	pkgdesc = Extra modules and scripts for CMake
+	pkgver = 6.30.0
+	pkgrel = 3
+	url = https://github.com/Sonic-DE/sonic-frameworks-cmake-modules
+	arch = any
+	groups = sonicde-frameworks
+	license = LGPL
+	makedepends = python-requests
+	makedepends = python-sphinx
+	makedepends = qt6-tools
+	depends = cmake
+	optdepends = python-pyxdg: to generate fastlane metadata for Android apps
+	optdepends = python-requests: to generate fastlane metadata for Android apps
+	optdepends = python-yaml: to generate fastlane metadata for Android apps
+	provides = extra-cmake-modules
+	conflicts = extra-cmake-modules
+	options = !debug
+	source = sonic-frameworks-cmake-modules-6.30.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-cmake-modules/archive/refs/tags/6.30.0.tar.gz
+	source = default-arch-libexecdir.patch
+	sha256sums = e39f62a1fc0e58ddc36612ddcc850e4ef7f6b59db68b38d4573bf150ed1633cb
+	sha256sums = 7e4f07c0b485419d906e04759a71f24674e4177c3d8d34270996d6678e88d03b
+
+pkgname = sonic-frameworks-cmake-modules

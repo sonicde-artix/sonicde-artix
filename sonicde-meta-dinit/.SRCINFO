@@ -1,0 +1,26 @@
+pkgbase = sonicde-meta-dinit
+	pkgdesc = Dinit service stack for SonicDE on Artix Linux
+	pkgver = 6.7
+	pkgrel = 1
+	url = https://github.com/Sonic-DE
+	arch = any
+	groups = sonicde
+	license = None
+	depends = bluez-dinit
+	depends = dbus-dinit
+	depends = elogind-dinit
+	depends = esettingsd
+	depends = esysusers
+	depends = etmpfiles
+	depends = networkmanager-dinit
+	depends = pipewire-pulse-dinit
+	depends = sonicde-meta
+	depends = wireplumber-dinit
+	optdepends = bolt-dinit: Thunderbolt device management
+	optdepends = firewalld-dinit: firewalld backend for Sonic Firewall
+	optdepends = ufw-dinit: UFW backend for Sonic Firewall
+	provides = init-sonicde-meta
+	conflicts = init-sonicde-meta
+	options = !debug
+
+pkgname = sonicde-meta-dinit

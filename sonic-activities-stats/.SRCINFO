@@ -1,0 +1,23 @@
+pkgbase = sonic-activities-stats
+	pkgdesc = A library for accessing the usage data collected by the activities system
+	pkgver = 6.7.5
+	pkgrel = 3
+	url = https://github.com/Sonic-DE/sonic-activities-stats
+	arch = x86_64
+	groups = sonicde
+	license = LGPL-2.0-or-later
+	makedepends = qt6-tools
+	makedepends = sonic-frameworks-cmake-modules
+	depends = glibc
+	depends = libstdc++
+	depends = qt6-base
+	depends = sonic-activities
+	depends = sonic-frameworks-settings
+	provides = plasma-activities-stats
+	conflicts = kactivities-stats
+	conflicts = plasma-activities-stats
+	replaces = kactivities-stats
+	source = sonic-activities-stats-6.7.5.tar.gz::https://github.com/Sonic-DE/sonic-activities-stats/archive/refs/tags/6.7.5.tar.gz
+	sha256sums = 8b6182bcf845bb51a95371889f8f6a065685372ad8856bd48edad6012a76f094
+
+pkgname = sonic-activities-stats

@@ -1,0 +1,23 @@
+pkgbase = sonic-write-daemon
+	pkgdesc = SonicDE daemon listening for wall and write messages
+	pkgver = 6.7.5
+	pkgrel = 1
+	url = https://github.com/Sonic-DE/sonic-write-daemon
+	arch = x86_64
+	groups = sonicde
+	license = LGPL-2.0-or-later
+	makedepends = sonic-frameworks-cmake-modules
+	makedepends = sonic-frameworks-doctools
+	depends = glibc
+	depends = libstdc++
+	depends = qt6-base
+	depends = sonic-frameworks-core-addons
+	depends = sonic-frameworks-dbus
+	depends = sonic-frameworks-notifications
+	depends = sonic-frameworks-pseudo-terminal
+	provides = kwrited
+	conflicts = kwrited
+	source = sonic-write-daemon-6.7.5.tar.gz::https://github.com/Sonic-DE/sonic-write-daemon/archive/refs/tags/6.7.5.tar.gz
+	sha256sums = 1af05d1b647dda81b9f4ee256e4f247b501c6f7f44ee992a26cf7ade6f1bd51c
+
+pkgname = sonic-write-daemon

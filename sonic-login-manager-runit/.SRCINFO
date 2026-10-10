@@ -1,0 +1,20 @@
+pkgbase = sonic-login-manager-runit
+	pkgdesc = runit service scripts for sonic-login-manager
+	pkgver = 20260601
+	pkgrel = 3
+	url = https://github.com/Sonic-DE/sonic-login-manager
+	arch = any
+	groups = sonicde
+	license = BSD
+	depends = elogind-runit
+	depends = runit
+	depends = sonic-login-manager
+	provides = init-displaymanager
+	provides = init-sonic-login-manager
+	conflicts = init-sonic-login-manager
+	source = soniclogin.run
+	source = soniclogin.log.run
+	sha256sums = 09d2783c93222800fdf885d02045e8390d64a902a8545d8a763ba48b9e8e618c
+	sha256sums = 8c905514579d206be8aa4053813a2f98fe6d0cc71a88bea9876738e5ba98a62f
+
+pkgname = sonic-login-manager-runit
