@@ -1,0 +1,6 @@
+*.SRCINFO merge=ours
+/.gitattributes merge=ours
+/.gitconfig merge=ours
+/docs/** merge=ours
+/README.md merge=ours
+/sonic-switch.sh merge=ours
