@@ -3,7 +3,7 @@
 
 pkgname=sonic-silver-gtk
 pkgver=6.7.5
-pkgrel=2
+pkgrel=3
 pkgdesc='Silver widget theme for GTK 2 and 3'
 arch=(any)
 url='https://github.com/Sonic-DE/sonic-silver-gtk'
@@ -15,6 +15,7 @@ makedepends=(python-cairo
              sonic-silver)
 provides=(breeze-gtk)
 conflicts=(breeze-gtk)
+options=('!debug')
 groups=(sonicde)
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
 sha256sums=('9a489dc86770d01acf513526e515b003cf041baa8196b43f354348a35c260901')
