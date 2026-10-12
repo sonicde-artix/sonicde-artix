@@ -5,7 +5,7 @@
 
 pkgname=sonicde-meta
 pkgver=6.7
-pkgrel=2
+pkgrel=3
 pkgdesc='Meta package to install SonicDE, an X11-focused fork of KDE'
 arch=(any)
 license=(None)
@@ -67,3 +67,4 @@ optdepends=('breeze-grub: Breeze theme for GRUB'
             'sonic-silver-sddm: SDDM silver theme'
             'sonic-workspace-wallpapers: Additional wallpapers'
             'wacomtablet: Drawing tablet settings on X')
+options=('!debug')
