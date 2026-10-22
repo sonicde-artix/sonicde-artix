@@ -6,7 +6,7 @@
 : "${USE_SYSTEMD:=1}"
 
 pkgname=sonic-desktop-interface
-pkgver=6.8.0
+pkgver=6.8.0.1
 pkgrel=1
 pkgdesc='Sonic Desktop Interface'
 arch=('x86_64')
@@ -113,7 +113,7 @@ source=(
 	"$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz"
 	'0001-add-explicit-input-backend-options.patch'
 )
-sha256sums=('549b7d995061a5c1f406210a57ed7e3abe83dd172e64c4d0472e6cdf23f54781'
+sha256sums=('63a9da9c9a07e8b252ec195784fafbea462bb44d4ef9d629f123b0712ec2f510'
             '63afec950ae88f89fcf206b8e40aab3dcc4f5a4df6f456b31ad3ebf20158f440')
 
 prepare() {

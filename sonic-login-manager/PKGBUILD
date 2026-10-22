@@ -4,8 +4,8 @@
 : "${USE_SYSTEMD:=1}"
 
 pkgname=sonic-login-manager
-pkgver=6.8.0
-pkgrel=2
+pkgver=6.8.0.2
+pkgrel=1
 arch=('x86_64')
 pkgdesc='Sonic Login Manager'
 url='https://github.com/Sonic-DE/sonic-login-manager'
@@ -49,7 +49,7 @@ provides=('plasma-login-manager')
 conflicts=('plasma-login-manager')
 groups=('sonicde')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('cd5bf3cdf0bbd8b6b76d41af854c1d061700ef602f20700ec098baa60228397d')
+sha256sums=('c96e6a1c467f1a64daef7d0f2cace544647fdce677b5b8ba074f159413cbe82a')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

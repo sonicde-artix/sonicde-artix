@@ -7,7 +7,7 @@
 : "${USE_SYSTEMD:=1}"
 
 pkgname=sonic-workspace
-pkgver=6.8.0
+pkgver=6.8.0.2
 pkgrel=1
 pkgdesc='SonicDE workspace components'
 arch=('x86_64')
@@ -150,7 +150,7 @@ source=(
 	"$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz"
 	'build-systemd-option.patch'
 )
-sha256sums=('d787031f38fff307e763bf4dfcee2c87f259a416c1f22861f2f3890fdcef77de'
+sha256sums=('c9d27a17b8674f0fec1561866bf42777624f926f8805c433ab4f0aa75899a7fa'
             '46d21bdb2347afe7ee313196f4296cfc91f4e16e68eca9f0da3dcae42663a63d')
 
 prepare() {

@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-frameworks-icon-themes
-pkgver=6.31.0
+pkgver=6.31.0.1
 pkgrel=1
 pkgdesc='Support for icon themes'
 arch=('x86_64')
@@ -35,7 +35,7 @@ provides=('kiconthemes')
 conflicts=('kiconthemes')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('373382f881b3321c38d8fc4c1444f3cac8ef7f7eb8922ffdb8069583ef79111a')
+sha256sums=('efff90128665a5fe43cab271d68f605d26a354cd492e68a990d25c83be77fc81')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \
