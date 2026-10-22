@@ -6,7 +6,7 @@
 : "${USE_SYSTEMD:=1}"
 
 pkgname=sonic-system-log
-pkgver=26.08.0
+pkgver=26.08.2
 pkgrel=1
 pkgdesc='System log viewer tool'
 url='https://github.com/Sonic-DE/sonic-system-log'
@@ -46,7 +46,7 @@ groups=(
 	'sonicde-system'
 )
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('94655fd8570d6ff52ca37e08997d642365a23c430aa178e388aaef48a400258c')
+sha256sums=('85180d7c8dfe50d6329bf4926a203f74d9ad47a4d9d3412d4255264c52d4be0f')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

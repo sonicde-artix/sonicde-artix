@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-frameworks-app-info
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='Advanced plugin and service introspection'
 arch=('x86_64')
@@ -31,7 +31,7 @@ provides=('kservice')
 conflicts=('kservice')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('94bd46b4bb89faf3dc74c12326b10e0c2dabc8123db04679bb959af8776a52b3')
+sha256sums=('e3ed13389fd05a544480ac73e5fc04198f353658278fa8645df680c81b364f06')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

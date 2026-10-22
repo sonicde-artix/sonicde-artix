@@ -2,7 +2,7 @@
 # Contributor:Antonio Rojas <arojas@archlinux.org>
 
 pkgname=sonic-gamma
-pkgver=6.7.5
+pkgver=6.8.0
 pkgrel=1
 pkgdesc='Adjust your monitor gamma settings'
 arch=('x86_64')
@@ -31,7 +31,7 @@ replaces=('kgamma5')
 provides=('kgamma')
 groups=('sonicde')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('155268d99299aca11871701cc481bde0472d65c9ee51f3d36e848263ab00aad3')
+sha256sums=('a537fabeeb80f3ac466c16e27eef227022d6cec3a1339c116160a13388dc9687')
 
 build() {
 	cmake -B build  -S "$pkgname-$pkgver" \

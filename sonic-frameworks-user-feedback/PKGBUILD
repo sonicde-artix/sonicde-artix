@@ -2,7 +2,7 @@
 # Contributor: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=sonic-frameworks-user-feedback
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='Framework for collecting user feedback for applications via telemetry and surveys'
 arch=('x86_64')
@@ -37,7 +37,7 @@ conflicts=(
 replaces=('kuserfeedback5')
 groups=('sonicde')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('aace66e9a9411ae62b3a978aee094bcce78c8c75791e3ab90348d544ad89de62')
+sha256sums=('bf40e82c34536d05de42725038b17453b52a203b3c90765d5ee6c79df3618498')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

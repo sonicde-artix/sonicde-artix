@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-frameworks-zeroconf
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='Abstraction to system DNSSD features'
 arch=('x86_64')
@@ -27,7 +27,7 @@ provides=('kdnssd')
 conflicts=('kdnssd')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('6febabe4cf62f97d7b9cbfc1086a8b475fda229cf854d8a722751a2bab5501d1')
+sha256sums=('0a1ef3b175833c75f9d43c3cbece8adba1111735c660f59985643c725a377bd7')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

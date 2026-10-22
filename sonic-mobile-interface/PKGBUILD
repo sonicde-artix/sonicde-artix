@@ -5,7 +5,7 @@
 : "${USE_SYSTEMD:=1}"
 
 pkgname=sonic-mobile-interface
-pkgver=6.7.5
+pkgver=6.8.0
 pkgrel=1
 pkgdesc='SonicDE interface for mobile devices'
 arch=('x86_64')
@@ -19,7 +19,6 @@ depends=(
 	'libudev.so'
 	'plasma-keyboard'
 	'plasma-nano'
-	'powerdevil'
 	'qcoro'
 	'qt6-base'
 	'qt6-declarative'
@@ -51,6 +50,7 @@ depends=(
 	'sonic-interface-libraries'
 	'sonic-network-manager'
 	'sonic-pipewire'
+	'sonic-power-management'
 	'sonic-screen-library'
 	'sonic-win'
 	'sonic-workspace'
@@ -72,7 +72,7 @@ provides=('plasma-mobile')
 conflicts=('plasma-mobile')
 groups=('sonicde')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('1aa6a2bf129472e3ae216a076ac71873a759b6cdc4aa3487bf55b7213d20554e')
+sha256sums=('5c79777f6f90451043aab480f1cbca72cac3fcdb4d19da31ab84435c10497b32')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver"

@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-frameworks-file-metadata
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='A library for extracting file metadata'
 arch=('x86_64')
@@ -46,7 +46,7 @@ provides=('kfilemetadata')
 conflicts=('kfilemetadata')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('fe2e2a9fef2cf127f612b33f4597aaccb57b158311702578f4b1542583392756')
+sha256sums=('cab416de326aa64c0ff77f7198fc361db5337ec545732b79b9924ea9a9421b8e')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

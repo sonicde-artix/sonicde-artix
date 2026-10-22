@@ -3,7 +3,7 @@
 # Contributor: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=sonic-frameworks-quick-charts
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='A QtQuick plugin providing high-performance charts'
 arch=('x86_64')
@@ -28,7 +28,7 @@ provides=('kquickcharts')
 conflicts=('kquickcharts')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('0c29b16bcad2db675e8958d668968e4debef4fc6956ef6f90773266e2ce9ac48')
+sha256sums=('45687be15c1845c91bbc1be75b3e1123578b2ee3d8fa8da9a9d8e3cf934f4820')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

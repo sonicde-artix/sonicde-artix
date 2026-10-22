@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-frameworks-widgets-addons
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='Addons to QtWidgets'
 arch=('x86_64')
@@ -32,7 +32,7 @@ provides=('kwidgetsaddons')
 conflicts=('kwidgetsaddons')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('1a821face8f08a7b4732e5de0396e09c3f3ba36270cea452ec0865273035923a')
+sha256sums=('23d5bc66ccadf1b599cb73543cc62d6a12f217faed3f9ac0ea45f972f2e40f33')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

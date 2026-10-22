@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-frameworks-data-views
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='Widget addons for Qt Model/View'
 arch=('x86_64')
@@ -27,7 +27,7 @@ provides=('kitemviews')
 conflicts=('kitemviews')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('c6fc3a6168c2e3dc95f6a43df1564ab593f0f4a3cec48f00271891a172181c46')
+sha256sums=('dc320c492a8649f942b9a1768a0cef45dfe2bec8e0abc7aa79ff46ac8ddef816')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-file-search-ui
-pkgver=6.7.5
+pkgver=6.8.0
 pkgrel=1
 pkgdesc='A dedicated search application for SonicDE'
 arch=('x86_64')
@@ -30,7 +30,7 @@ provides=('milou')
 conflicts=('milou')
 groups=('sonicde')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('064a1b472320cf3fd18fc2f56384774c496b89552121f2b9c7bfae3d99c6c304')
+sha256sums=('7d9fd9d3fadddb62c56e1938dadf4522fc129a43d50963e7afb7a5f5df9ca9ab')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

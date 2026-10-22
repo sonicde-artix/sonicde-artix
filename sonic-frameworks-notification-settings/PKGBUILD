@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-frameworks-notification-settings
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='Configuration system for SonicDE notify'
 arch=('x86_64')
@@ -31,7 +31,7 @@ provides=('knotifyconfig')
 conflicts=('knotifyconfig')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('f0a42701d312ee62867813b250178ead312020493ddbf721afa35074867ff3e1')
+sha256sums=('54c64f9725f1a7cded36da2328a83aaa4b34720fed32ea786c3022343c03f150')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

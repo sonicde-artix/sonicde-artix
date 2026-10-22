@@ -4,7 +4,7 @@
 # Contributor: Nick B <Shirakawasuna at gmail _dot_com>
 
 pkgname=sonic-partition-manager
-pkgver=26.08.0
+pkgver=26.08.2
 pkgrel=1
 pkgdesc='A SonicDE utility that allows you to manage disks, partitions, and file systems'
 arch=('x86_64')
@@ -39,7 +39,7 @@ groups=(
 	'sonicde-system'
 )
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('13172ce09fdc1d97dfac566d35edc04792b1af81fec69798a4961434642860ee')
+sha256sums=('bd342fdf5277b91160f297242eb1eb3bdfbfafe04cc2450f7c9f91ad9bd1c100')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

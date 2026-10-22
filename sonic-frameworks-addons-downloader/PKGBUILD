@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-frameworks-addons-downloader
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='Support for downloading application assets from the network'
 arch=('x86_64')
@@ -39,7 +39,7 @@ provides=('knewstuff')
 conflicts=('knewstuff')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('4a79193be74f213bee10aac45896d057854d5a1952cace884193b85acc74efcb')
+sha256sums=('ea5a17622392b8d551a1948d400f82d78aaa018b030e6b1b7351605eae1de257')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

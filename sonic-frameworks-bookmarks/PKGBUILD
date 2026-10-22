@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-frameworks-bookmarks
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='Support for bookmarks and the XBEL format'
 arch=('x86_64')
@@ -30,7 +30,7 @@ provides=('kbookmarks')
 conflicts=('kbookmarks')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('b27e69aa6c207a5817056d83d0a78c623ae12a49b459e354626edd3782750785')
+sha256sums=('218f4643bb1663c07324334f10927bab900a5e5b39b8ea937059b95b3c66ba8c')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

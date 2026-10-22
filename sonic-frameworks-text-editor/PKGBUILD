@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-frameworks-text-editor
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='Advanced embeddable text editor'
 arch=('x86_64')
@@ -49,7 +49,7 @@ provides=('ktexteditor')
 conflicts=('ktexteditor')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('4173a71692966c3bc2bd17fadf44f382fa591b937d5bc3741346c55f527999ef')
+sha256sums=('b0ed0a0ca055e15fa222f38fde38d8b049c40e640d04490037fb072b64992c58')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

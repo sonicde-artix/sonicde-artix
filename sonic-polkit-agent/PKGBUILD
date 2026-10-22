@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-polkit-agent
-pkgver=6.7.5
+pkgver=6.8.0
 pkgrel=1
 pkgdesc='Daemon providing a polkit authentication UI for SonicDE'
 arch=('x86_64')
@@ -32,7 +32,7 @@ provides=('polkit-kde-agent')
 conflicts=('polkit-kde-agent')
 groups=('sonicde')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('afcaddd71da61abc001afbd4f5227e631c2329045e8c78001075e624a8b91d98')
+sha256sums=('2085cf4bbc40bc787191c9f53a635ce24530e384571f8a74374ac78d0c63f311')
 
 build() {
 	cmake -B build -S $pkgname-$pkgver \

@@ -2,7 +2,7 @@
 # Contributor:Antonio Rojas <arojas@archlinux.org>
 
 pkgname=sonic-disks
-pkgver=6.7.5
+pkgver=6.8.0
 pkgrel=1
 pkgdesc='Monitors S.M.A.R.T. capable devices for imminent failure'
 arch=('x86_64')
@@ -33,7 +33,7 @@ provides=('plasma-disks')
 conflicts=('plasma-disks')
 groups=('sonicde')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('e24f83258b2f3fe1b2f99ed1fbecc86d6690d295e2cd5bf11a28de144144695d')
+sha256sums=('fa757234b5af1c878566d48bde9880db02ac0afd2ae7d55f7058399165f7b4e5')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

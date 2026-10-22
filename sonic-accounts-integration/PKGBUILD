@@ -2,7 +2,7 @@
 # Contributor: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=sonic-accounts-integration
-pkgver=26.08.0
+pkgver=26.08.2
 pkgrel=1
 pkgdesc='Online account management system and its SonicDE integration components'
 arch=('x86_64')
@@ -36,7 +36,7 @@ provides=('kaccounts-integration')
 conflicts=('kaccounts-integration')
 groups=('sonicde')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('df84c9ce5c4527f4cc42f22525175356ca48ae97604ecead5927c0e28c464778')
+sha256sums=('7a40aa20c7a18516bd6f5bf46936075d9968f3b64366561d5e252a933b747e9e')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-frameworks-root-shell
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='Integration with su for elevated privileges'
 arch=('x86_64')
@@ -32,7 +32,7 @@ provides=('kdesu')
 conflicts=('kdesu')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('28c60bc7c7693cf719875747b20cbf48d03f07cfba03f7da1a1be78d88ae48d1')
+sha256sums=('9f233f88160c91d7c4e8c14fe1f241b49f54b174a8324eba3fcead12d1348c69')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

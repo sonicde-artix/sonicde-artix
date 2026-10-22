@@ -2,7 +2,7 @@
 # Contributor:Antonio Rojas <arojas@archlinux.org>
 
 pkgname=sonic-frameworks-purpose
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='Framework for providing abstractions to get the developers purposes fulfilled'
 arch=('x86_64')
@@ -49,7 +49,7 @@ conflicts=(
 provides=('purpose')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('505942650640e517c0b73064a9fcccaad1d76b273b712525e9b8b623cb5868f5')
+sha256sums=('d226ef5310101ae961c35733a6b71c792fcbe292a65c58bbca9f81e3cc2c25f7')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

@@ -6,8 +6,8 @@
 : "${USE_SYSTEMD:=1}"
 
 pkgname=sonic-bluetooth-runtime
-pkgver=6.7.5
-pkgrel=3
+pkgver=6.8.0
+pkgrel=1
 pkgdesc='Integrate Bluetooth within SonicDE components'
 arch=('x86_64')
 url='https://github.com/Sonic-DE/sonic-bluetooth-runtime'
@@ -49,7 +49,7 @@ provides=('bluedevil')
 conflicts=('bluedevil')
 groups=('sonicde')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('8ea0c52a0ee8f6879ea51430e44e92f5eac0d1b1ba679fe6266933125fc6247f')
+sha256sums=('766387d75bc9a4ccc889e0f3bbc9fb8e4700dc502088b33d49fb12ad7f513cb4')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

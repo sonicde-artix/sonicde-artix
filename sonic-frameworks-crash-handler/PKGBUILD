@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-frameworks-crash-handler
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='Support for application crash analysis and bug report from apps'
 arch=('x86_64')
@@ -31,7 +31,7 @@ provides=('kcrash')
 conflicts=('kcrash')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('de39b993212df235a1ccf5e26f84d798394954d7e5e9e6e60c08e333aea7edbe')
+sha256sums=('861cfef740bb6ba82bde263c4eefcc057652f37ed2bdac366b8f2c505396160c')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

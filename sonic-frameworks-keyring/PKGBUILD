@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-frameworks-keyring
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='Secure and unified container for user passwords'
 arch=('x86_64')
@@ -48,7 +48,7 @@ provides=(
 conflicts=('kwallet')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('5b80c4dcb4f9b6f9a59def54db05c16d5f0da50dd29c090075d076e78e297a70')
+sha256sums=('cb14ce3aa35193377834f8ffae19f934cee2da619432e7a3b5e84c3e53cdec4b')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-frameworks-notifications
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='Abstraction for system notifications'
 arch=('x86_64')
@@ -37,7 +37,7 @@ provides=('knotifications')
 conflicts=('knotifications')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('1de8f37514d0160c4e44b4d3b8ffa21651c03ec50e74a33f577ef7518d42c9eb')
+sha256sums=('1d10c4fa7079dfbb41eb69e963c521c7c24e2cb82ebc94154c2c81623251e9a8')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

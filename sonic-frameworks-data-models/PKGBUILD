@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-frameworks-data-models
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='Models for Qt Model/View system'
 arch=('x86_64')
@@ -29,7 +29,7 @@ provides=('kitemmodels')
 conflicts=('kitemmodels')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('822a5c48d22594f617a910364ac06719e0b9e967997c789ac6725b0a4a3a4ee6')
+sha256sums=('fa825205e659fd1061f325407d9d6736f000243d7d139048633e7a6297632fb7')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

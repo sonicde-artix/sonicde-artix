@@ -4,8 +4,8 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-screen
-pkgver=6.7.5.1
-pkgrel=3
+pkgver=6.8.0
+pkgrel=1
 pkgdesc='SonicDE screen management software'
 arch=('x86_64')
 url='https://github.com/Sonic-DE/sonic-screen'
@@ -38,7 +38,7 @@ provides=('kscreen')
 conflicts=('kscreen')
 groups=('sonicde')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('2faa2c7be7773060b66322427c7d083b9bf36c3352ef1d363acd9ee85025afb0')
+sha256sums=('18b84570b7a1d40e43a0f2f91887814e14328a0f1a200b8d799aca56d10baefe')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

@@ -4,8 +4,8 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-silver
-pkgver=6.7.5
-pkgrel=3
+pkgver=6.8.0
+pkgrel=1
 pkgdesc='Artwork, styles and assets for the Silver visual style for SonicDE'
 arch=('x86_64')
 url='https://github.com/Sonic-DE/sonic-silver'
@@ -41,7 +41,7 @@ conflicts=(
 )
 groups=('sonicde')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('3681dc23cbbd03644cbef717fa63df36661cae2b9438dadeafd4771fdff58922')
+sha256sums=('3d8abed948ac4b7be07929e9131d7930826bc2a7a29c47c49bfcb53a4d8203fc')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

@@ -3,7 +3,7 @@
 # Mainrainer: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=sonic-frameworks-modemmanager
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='Qt wrapper for ModemManager DBus API'
 arch=('x86_64')
@@ -27,7 +27,7 @@ provides=('modemmanager-qt')
 conflicts=('modemmanager-qt')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('2b2af2b0d42b923e01c4a0d22d5af9b1b284ef5ae533bb01f1acee90a9a5154e')
+sha256sums=('fec4762013ea060bbcd2d9d57e673b96ff3de415994d45a7912fae313d7aaf83')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

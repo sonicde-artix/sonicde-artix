@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-frameworks-settings
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='Configuration system'
 arch=('x86_64')
@@ -28,7 +28,7 @@ provides=('kconfig')
 conflicts=('kconfig')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('3ead064ad1ee68eb7d6f0f1e76f483da14c45d1f4fcac56707b108b34538f8f1')
+sha256sums=('845977f05939d8a22ccec2cec65feb295cdfd9dbea1eb97c3d54e839376a7a09')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-frameworks-text-codec
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='Provide a collection of methods to manipulate strings using various encodings'
 arch=('x86_64')
@@ -28,7 +28,7 @@ provides=('kcodecs')
 conflicts=('kcodecs')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('2a2000f7b4891d7cdf463e28bca3cccc22def3d7700e0d738387aae31677892c')
+sha256sums=('4817963dbc7350a7902fd2af46583b8ce3397499e09913dc90a39e23aa069b2e')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

@@ -4,8 +4,8 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-frameworks-image-formats
-pkgver=6.30.0
-pkgrel=2
+pkgver=6.31.0
+pkgrel=1
 pkgdesc='Image format plugins for Qt 6'
 arch=('x86_64')
 url='https://github.com/Sonic-DE/sonic-frameworks-image-formats'
@@ -45,7 +45,7 @@ provides=('kimageformats')
 conflicts=('kimageformats')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('ede0cfbaa3fea54f6fc0941dd12a78a43f14f408b60dcbb581406a81b98ed288')
+sha256sums=('01645074425dec983aa0e28673e5ed88845f5487b918adfa7a1b207831f9ed14')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

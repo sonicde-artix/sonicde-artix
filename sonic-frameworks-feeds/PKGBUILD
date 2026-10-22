@@ -2,7 +2,7 @@
 # Contributor: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=sonic-frameworks-feeds
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='RSS/Atom parser library'
 arch=('x86_64')
@@ -27,7 +27,7 @@ provides=('syndication')
 conflicts=('syndication')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('fa2f9c0329fd28f0d474508ed06434ec5ba8245dbc3ca113edee849d21a6a370')
+sha256sums=('ff56f827104d0c05f037f8b55123791c4c70fa65785dfcff7256f75a6bdde443')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

@@ -4,8 +4,8 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-activities
-pkgver=6.7.5
-pkgrel=3
+pkgver=6.8.0
+pkgrel=1
 pkgdesc='Core components for SonicDE Activities'
 arch=('x86_64')
 url='https://github.com/Sonic-DE/sonic-activities'
@@ -31,7 +31,7 @@ conflicts=(
 replaces=('kactivities')
 groups=('sonicde')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('f47a3dae0a385f84ab3723d1ff32450ec55c444856bb35ebcb70a5c885f36947')
+sha256sums=('ae13996b4ab82e9b0eae6f39d45dddbed8d3e4cb4f5a2c8aa634a3099b5dbf0a')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

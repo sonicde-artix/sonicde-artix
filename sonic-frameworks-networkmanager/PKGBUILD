@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-frameworks-networkmanager
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='Qt wrapper for NetworkManager API'
 arch=('x86_64')
@@ -30,7 +30,7 @@ provides=('networkmanager-qt')
 conflicts=('networkmanager-qt')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('ac8860f043c4efbff55de15f08a7be7c331de4d4e416652a93840a77f6f5f3f4')
+sha256sums=('3dfa087535eadc7a9e43d4b9d99dcd77370b55915b92ead85634ec190b27720f')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

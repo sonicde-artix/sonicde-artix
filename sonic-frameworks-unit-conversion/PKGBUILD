@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-frameworks-unit-conversion
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='Support for unit conversion'
 arch=('x86_64')
@@ -33,7 +33,7 @@ provides=('kunitconversion')
 conflicts=('kunitconversion')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('3c0e20451d59d3efe120e9e7625e193719ed176bc5279614ecdb3bd1798130e3')
+sha256sums=('a7d7f4d7530720d26b8cc28cfa7b4c38da0d33025baf77c3f9f79a8c1725ffd3')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

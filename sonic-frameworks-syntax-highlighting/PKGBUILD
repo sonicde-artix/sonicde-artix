@@ -3,7 +3,7 @@
 # Contributor: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=sonic-frameworks-syntax-highlighting
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='Syntax highlighting engine for structured text and code'
 arch=('x86_64')
@@ -25,7 +25,7 @@ provides=('syntax-highlighting')
 conflicts=('syntax-highlighting')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('d6c8d341044767e7a450f1a748128f07df91dbaa02a428be852c4edb1d328752')
+sha256sums=('7f4fae2e60d203de1fd24a77c709073bad2407aa7c198154a263c6caea6fcd91')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

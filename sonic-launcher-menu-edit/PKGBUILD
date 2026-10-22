@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-launcher-menu-edit
-pkgver=6.7.5
+pkgver=6.8.0
 pkgrel=1
 pkgdesc='SonicDE menu editor'
 arch=('x86_64')
@@ -39,7 +39,7 @@ provides=('kmenuedit')
 conflicts=('kmenuedit')
 groups=('sonicde')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('e1d271eb4debb323472c6f454cac9a077a3c8ae4871faa0725a0ab315a922c36')
+sha256sums=('c5117e540825ba845218e838ef97e2a5096885b83b031f6c62412bfe18f8965d')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-frameworks-ui-components
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='Document centric plugin system'
 arch=('x86_64')
@@ -33,7 +33,7 @@ provides=('kparts')
 conflicts=('kparts')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('8542bece3564e73a8ded014835db0f063b6eb69045cc28c2a072a3c3c41627ea')
+sha256sums=('10ea1d1b80b52c3245587f3d55969597a737b7578f1b3e2bb1f5242668525098')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

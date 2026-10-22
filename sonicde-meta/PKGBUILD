@@ -5,8 +5,8 @@
 : "${USE_SYSTEMD:=1}"
 
 pkgname=sonicde-meta
-pkgver=6.7
-pkgrel=3
+pkgver=6.8
+pkgrel=2
 pkgdesc='Meta package to install SonicDE, an X11-focused fork of KDE'
 arch=('any')
 license=('None')
@@ -15,10 +15,6 @@ depends=(
 	'aurorae'
 	'flatpak-kcm'
 	'kup'
-	'ocean-sound-theme'
-	'plasma-keyboard'
-	'powerdevil'
-	'print-manager'
 	'sonic-activities-stats'
 	'sonic-activity-manager-daemon'
 	'sonic-audio-applet-pulse'
@@ -41,12 +37,15 @@ depends=(
 	'sonic-oxygen-sounds'
 	'sonic-pipewire'
 	'sonic-polkit-agent'
+	'sonic-power-management'
+	'sonic-print-management'
 	'sonic-qt-theme-bridge'
 	'sonic-screen'
 	'sonic-screenies'
 	'sonic-screenlocker'
 	'sonic-silver'
 	'sonic-silver-gtk'
+	'sonic-silver-sound-theme'
 	'sonic-ssh-password-prompt'
 	'sonic-system-info'
 	'sonic-system-monitor'
@@ -65,13 +64,13 @@ depends=(
 optdepends=(
 	'breeze-grub: Breeze theme for GRUB'
 	'breeze-plymouth: Breeze theme for Plymouth'
-	'plasma-sdk: Development tools'
 	'plymouth-kcm: Configure Plymouth from systemsettings'
 	'sddm-kcm: SDDM configuration module'
 	'sonic-breeze: Breeze theme for SonicDE'
 	'sonic-drawing-tablet: Drawing tablet settings on X'
 	'sonic-gamma: Adjust gamma settings on X'
 	'sonic-silver-sddm: SDDM silver theme'
+	'sonic-theme-sdk: Development tools'
 	'sonic-workspace-wallpapers: Additional wallpapers'
 	'union: Next generation QtQuick/QtWidgets style engine'
 )

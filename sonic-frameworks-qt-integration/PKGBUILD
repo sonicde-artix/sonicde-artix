@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-frameworks-qt-integration
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='Framework providing components to allow applications to integrate with a SonicDE Workspace'
 arch=('x86_64')
@@ -39,7 +39,7 @@ provides=('frameworkintegration')
 conflicts=('frameworkintegration')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('363eb21e52d8f9974bb8769ee4581266fd28ebbe76b2a489900ea85aa5c095d0')
+sha256sums=('5f6feb53310013f5a0daa7cef74732d4ae0ce57aae439a0ebe709d49de6134ae')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-frameworks-archive
-pkgver=6.30.0
+pkgver=6.31.0
 pkgrel=1
 pkgdesc='Qt addon providing access to numerous types of archives'
 arch=('x86_64')
@@ -32,7 +32,7 @@ provides=('karchive')
 conflicts=('karchive')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('b8cf938b3beb8dac649f4d0467596736602bcd76af411e2bb9b99d8212d82fe0')
+sha256sums=('b0833f71ea7327525d5f197a750dcc1faeeb244ac33fba4222190d2ecc9d8e74')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

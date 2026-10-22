@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-system-settings
-pkgver=6.7.5
+pkgver=6.8.0
 pkgrel=1
 pkgdesc='SonicDE system manager for hardware, software, and workspaces'
 arch=('x86_64')
@@ -44,7 +44,7 @@ provides=('systemsettings')
 conflicts=('systemsettings')
 groups=('sonicde')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('dd0b9641c04e5118275d46cd725bc8df5536cd6abfe8dbe5d429cb91eb11373b')
+sha256sums=('10145e708380da7e2f6c3e2b5df988fcc6c288c7dffa6bcd59d8683772d64c44')
 
 build() {
 	cmake -B build  -S $pkgname-$pkgver \

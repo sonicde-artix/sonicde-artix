@@ -6,8 +6,8 @@
 : "${USE_SYSTEMD:=1}"
 
 pkgname=sonic-win
-pkgver=6.7.5.3
-pkgrel=3
+pkgver=6.8.0
+pkgrel=1
 pkgdesc='An easy to use, but flexible, X Window Manager'
 arch=('x86_64')
 url='https://github.com/Sonic-DE/sonic-win'
@@ -81,7 +81,7 @@ conflicts=('kwin-x11')
 groups=('sonicde')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
 install="$pkgname.install"
-sha256sums=('953ebf3b68304ae166159dfd689ce726e1d406ea0d93d529ed6962cc917f3fce')
+sha256sums=('2bf178b8c194c63593b7d68654a18ea0bfae5adb38f503353ba5844b3061074c')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \
