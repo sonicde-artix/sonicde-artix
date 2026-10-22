@@ -4,7 +4,7 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-frameworks-windowsystem
-pkgver=6.31.0
+pkgver=6.31.0.1
 pkgrel=1
 pkgdesc='Access to the windowing system'
 arch=('x86_64')
@@ -33,7 +33,7 @@ provides=('kwindowsystem')
 conflicts=('kwindowsystem')
 groups=('sonicde-frameworks')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('a3cd62452a821a0b30a4a431a6e573e386426a5887425827f794cf5e3dec448c')
+sha256sums=('a289551299b5c756d9217aaa59c75b666b93ea774ae91887749ca803718f6eed')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

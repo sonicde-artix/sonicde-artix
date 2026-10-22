@@ -1,0 +1,4 @@
+[sonic-print-management]
+source = "github"
+github = "Sonic-DE/sonic-print-management"
+use_max_tag = true

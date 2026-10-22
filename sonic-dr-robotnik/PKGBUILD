@@ -4,7 +4,7 @@
 : "${USE_SYSTEMD:=1}"
 
 pkgname=sonic-dr-robotnik
-pkgver=6.8.0
+pkgver=6.8.0.1
 pkgrel=1
 pkgdesc='The SonicDE crash handler'
 arch=('x86_64')
@@ -50,7 +50,7 @@ provides=('drkonqi')
 conflicts=('drkonqi')
 groups=('sonicde')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('c153c7bb74abf069fa151e652ae6a5f64773a20043e65e16861efaf02861984f')
+sha256sums=('e20edcfa970d81e706baf5d384db5363a62626b66ae7797c8527f41d0de7fe4d')
 
 build() {
 	cmake -B build -S "$pkgname-$pkgver" \

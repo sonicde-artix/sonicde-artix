@@ -1,0 +1,4 @@
+[sonic-power-management]
+source = "github"
+github = "Sonic-DE/sonic-power-management"
+use_max_tag = true

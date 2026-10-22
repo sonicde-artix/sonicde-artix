@@ -1,0 +1,4 @@
+[sonic-theme-sdk]
+source = "github"
+github = "Sonic-DE/sonic-theme-sdk"
+use_max_tag = true

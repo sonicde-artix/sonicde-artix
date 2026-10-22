@@ -1,0 +1,4 @@
+[sonic-keyboard]
+source = "github"
+github = "Sonic-DE/sonic-keyboard"
+use_max_tag = true

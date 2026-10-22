@@ -1,0 +1,4 @@
+[sonic-silver-sound-theme]
+source = "github"
+github = "Sonic-DE/sonic-silver-sound-theme"
+use_max_tag = true
