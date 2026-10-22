@@ -1,7 +1,7 @@
 pkgbase = sonic-login-manager
 	pkgdesc = Sonic Login Manager
 	pkgver = 6.8.0.2
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/Sonic-DE/sonic-login-manager
 	arch = x86_64
 	groups = sonicde
@@ -28,6 +28,7 @@ pkgbase = sonic-login-manager
 	depends = sonic-frameworks-settings-utils
 	depends = sonic-frameworks-windowsystem
 	depends = sonic-interface-libraries
+	depends = sonic-keyboard
 	depends = sonic-screen-library
 	depends = sonic-workspace
 	depends = xorg-server

@@ -1,7 +1,7 @@
 pkgbase = sonic-screenlocker
 	pkgdesc = Library and components for secure lock screen architecture
 	pkgver = 6.8.0.1
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/Sonic-DE/sonic-screenlocker
 	arch = x86_64
 	groups = sonicde
@@ -32,6 +32,7 @@ pkgbase = sonic-screenlocker
 	depends = sonic-frameworks-windowsystem
 	depends = sonic-frameworks-xml-gui
 	depends = sonic-interface-libraries
+	depends = sonic-keyboard
 	depends = sonic-screen-library
 	depends = xcb-util-keysyms
 	optdepends = elogind: login1 session and sleep inhibition integration

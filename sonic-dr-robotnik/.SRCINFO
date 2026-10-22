@@ -1,6 +1,6 @@
 pkgbase = sonic-dr-robotnik
 	pkgdesc = The SonicDE crash handler
-	pkgver = 6.8.0
+	pkgver = 6.8.0.1
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-dr-robotnik
 	arch = x86_64
@@ -39,7 +39,7 @@ pkgbase = sonic-dr-robotnik
 	optdepends = openrc-settingsd: hostname1 and timedate1 metadata for Sentry on OpenRC
 	provides = drkonqi
 	conflicts = drkonqi
-	source = sonic-dr-robotnik-6.8.0.tar.gz::https://github.com/Sonic-DE/sonic-dr-robotnik/archive/refs/tags/6.8.0.tar.gz
-	sha256sums = c153c7bb74abf069fa151e652ae6a5f64773a20043e65e16861efaf02861984f
+	source = sonic-dr-robotnik-6.8.0.1.tar.gz::https://github.com/Sonic-DE/sonic-dr-robotnik/archive/refs/tags/6.8.0.1.tar.gz
+	sha256sums = e20edcfa970d81e706baf5d384db5363a62626b66ae7797c8527f41d0de7fe4d
 
 pkgname = sonic-dr-robotnik
