@@ -1,6 +1,6 @@
 pkgbase = sonic-vault
 	pkgdesc = SonicDE applet and services for creating encrypted vaults
-	pkgver = 6.7.5
+	pkgver = 6.8.0
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-vault
 	arch = x86_64
@@ -32,7 +32,7 @@ pkgbase = sonic-vault
 	optdepends = encfs: to open old vaults created with EncFS
 	provides = plasma-vault
 	conflicts = plasma-vault
-	source = sonic-vault-6.7.5.tar.gz::https://github.com/Sonic-DE/sonic-vault/archive/refs/tags/6.7.5.tar.gz
-	sha256sums = 1dce56d3ac61e4b8323c853f8213f1aaec30310c24fea7da7895b8c67db8bb24
+	source = sonic-vault-6.8.0.tar.gz::https://github.com/Sonic-DE/sonic-vault/archive/refs/tags/6.8.0.tar.gz
+	sha256sums = ecd87ea9cf23ce40864dac300d558e9eeb66fa6dd6c4c37d8f147df6e781e882
 
 pkgname = sonic-vault

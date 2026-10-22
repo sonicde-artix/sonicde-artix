@@ -1,6 +1,6 @@
 pkgbase = sonic-partition-manager
 	pkgdesc = A SonicDE utility that allows you to manage disks, partitions, and file systems
-	pkgver = 26.08.0
+	pkgver = 26.08.2
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-partition-manager
 	arch = x86_64
@@ -27,7 +27,7 @@ pkgbase = sonic-partition-manager
 	depends = sonic-polkit
 	provides = partitionmanager
 	conflicts = partitionmanager
-	source = sonic-partition-manager-26.08.0.tar.gz::https://github.com/Sonic-DE/sonic-partition-manager/archive/refs/tags/26.08.0.tar.gz
-	sha256sums = 13172ce09fdc1d97dfac566d35edc04792b1af81fec69798a4961434642860ee
+	source = sonic-partition-manager-26.08.2.tar.gz::https://github.com/Sonic-DE/sonic-partition-manager/archive/refs/tags/26.08.2.tar.gz
+	sha256sums = bd342fdf5277b91160f297242eb1eb3bdfbfafe04cc2450f7c9f91ad9bd1c100
 
 pkgname = sonic-partition-manager

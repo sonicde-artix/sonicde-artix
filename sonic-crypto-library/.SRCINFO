@@ -1,7 +1,7 @@
 pkgbase = sonic-crypto-library
 	pkgdesc = SonicDE cryptographic library
 	pkgver = 2.3.12
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/Sonic-DE/sonic-crypto-library
 	arch = x86_64
 	groups = sonicde
@@ -27,6 +27,6 @@ pkgbase = sonic-crypto-library
 	provides = qca-qt6
 	conflicts = qca-qt6
 	source = sonic-crypto-library-2.3.12.tar.gz::https://github.com/Sonic-DE/sonic-crypto-library/archive/refs/tags/2.3.12.tar.gz
-	sha256sums = cde58f4f91dac58220a96fa9d96882f06ad1e7112eea93263bb32f169f7a5108
+	sha256sums = 5259a57b7843e05a5a8c4658c6b28baf696c09c69fbd50b33292072bd985acff
 
 pkgname = sonic-crypto-library

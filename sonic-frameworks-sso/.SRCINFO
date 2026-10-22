@@ -1,7 +1,7 @@
 pkgbase = sonic-frameworks-sso
 	pkgdesc = A D-Bus service which performs user authentication on behalf of its clients
 	pkgver = 8.61.2.3
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/Sonic-DE/sonic-frameworks-sso
 	arch = x86_64
 	groups = sonicde

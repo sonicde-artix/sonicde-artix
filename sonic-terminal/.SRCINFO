@@ -1,7 +1,7 @@
 pkgbase = sonic-terminal
 	pkgdesc = SonicDE terminal emulator
-	pkgver = 26.08.0
-	pkgrel = 3
+	pkgver = 26.08.2
+	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-terminal
 	arch = x86_64
 	groups = sonicde-applications
@@ -43,7 +43,7 @@ pkgbase = sonic-terminal
 	optdepends = keditbookmarks: to manage bookmarks
 	provides = konsole
 	conflicts = konsole
-	source = sonic-terminal-26.08.0.tar.gz::https://github.com/Sonic-DE/sonic-terminal/archive/refs/tags/26.08.0.tar.gz
-	sha256sums = 385b85f60609a18ea9e041c05ddc1f61730cf91bf8661d5a1f16a67dc91c6df9
+	source = sonic-terminal-26.08.2.tar.gz::https://github.com/Sonic-DE/sonic-terminal/archive/refs/tags/26.08.2.tar.gz
+	sha256sums = f07a6ae2b1e0320d59e4c555c72a45143d2b00654344aaab3d39d11188f1caf2
 
 pkgname = sonic-terminal

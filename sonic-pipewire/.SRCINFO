@@ -1,7 +1,7 @@
 pkgbase = sonic-pipewire
 	pkgdesc = Components relating to pipewire use in SonicDE
-	pkgver = 6.7.5
-	pkgrel = 3
+	pkgver = 6.8.0
+	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-pipewire
 	arch = x86_64
 	groups = sonicde
@@ -22,7 +22,7 @@ pkgbase = sonic-pipewire
 	depends = sonic-frameworks-internationalization
 	provides = kpipewire
 	conflicts = kpipewire
-	source = sonic-pipewire-6.7.5.tar.gz::https://github.com/Sonic-DE/sonic-pipewire/archive/refs/tags/6.7.5.tar.gz
-	sha256sums = 8cec77c3cdb7535082b54708ed038c66d998133ec10da77f2cc3de0e44867c9d
+	source = sonic-pipewire-6.8.0.tar.gz::https://github.com/Sonic-DE/sonic-pipewire/archive/refs/tags/6.8.0.tar.gz
+	sha256sums = d062fb8b84b25fba8e6f52a6d1876118bf8ac7961972fa037f038eddc27767dc
 
 pkgname = sonic-pipewire

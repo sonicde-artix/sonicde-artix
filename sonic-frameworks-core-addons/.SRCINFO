@@ -1,7 +1,7 @@
 pkgbase = sonic-frameworks-core-addons
 	pkgdesc = Addons to QtCore
-	pkgver = 6.30.0
-	pkgrel = 3
+	pkgver = 6.31.0
+	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-frameworks-core-addons
 	arch = x86_64
 	groups = sonicde-frameworks
@@ -25,7 +25,7 @@ pkgbase = sonic-frameworks-core-addons
 	optdepends = sonic-pyside6: Python bindings
 	provides = kcoreaddons
 	conflicts = kcoreaddons
-	source = sonic-frameworks-core-addons-6.30.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-core-addons/archive/refs/tags/6.30.0.tar.gz
-	sha256sums = 41514b9cea9a97ab92db6a11444dfb7bd70cd52c1c834a64ac59d88edf385914
+	source = sonic-frameworks-core-addons-6.31.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-core-addons/archive/refs/tags/6.31.0.tar.gz
+	sha256sums = fd8297c46f64c55e856c1a31d3380ad7167a9e01c03af5eeecb1d27b1ac8fd2d
 
 pkgname = sonic-frameworks-core-addons

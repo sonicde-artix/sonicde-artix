@@ -1,6 +1,6 @@
 pkgbase = sonic-frameworks-xml-gui
 	pkgdesc = User configurable main windows
-	pkgver = 6.30.0
+	pkgver = 6.31.0
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-frameworks-xml-gui
 	arch = x86_64
@@ -29,7 +29,7 @@ pkgbase = sonic-frameworks-xml-gui
 	optdepends = sonic-pyside6: Python bindings
 	provides = kxmlgui
 	conflicts = kxmlgui
-	source = sonic-frameworks-xml-gui-6.30.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-xml-gui/archive/refs/tags/6.30.0.tar.gz
-	sha256sums = b2be2c09add5c148d7e417d9ff8650a56f43528a1040afc64f1921107a1b44f6
+	source = sonic-frameworks-xml-gui-6.31.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-xml-gui/archive/refs/tags/6.31.0.tar.gz
+	sha256sums = f5aad5cc47da1ea478fea166551acb823f840a65e6d9638216a48bce229f9bd5
 
 pkgname = sonic-frameworks-xml-gui

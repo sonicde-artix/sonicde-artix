@@ -1,6 +1,6 @@
 pkgbase = sonic-gamma
 	pkgdesc = Adjust your monitor gamma settings
-	pkgver = 6.7.5
+	pkgver = 6.8.0
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-gamma
 	arch = x86_64
@@ -21,7 +21,7 @@ pkgbase = sonic-gamma
 	conflicts = kgamma
 	conflicts = kgamma5
 	replaces = kgamma5
-	source = sonic-gamma-6.7.5.tar.gz::https://github.com/Sonic-DE/sonic-gamma/archive/refs/tags/6.7.5.tar.gz
-	sha256sums = 155268d99299aca11871701cc481bde0472d65c9ee51f3d36e848263ab00aad3
+	source = sonic-gamma-6.8.0.tar.gz::https://github.com/Sonic-DE/sonic-gamma/archive/refs/tags/6.8.0.tar.gz
+	sha256sums = a537fabeeb80f3ac466c16e27eef227022d6cec3a1339c116160a13388dc9687
 
 pkgname = sonic-gamma

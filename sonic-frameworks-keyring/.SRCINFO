@@ -1,6 +1,6 @@
 pkgbase = sonic-frameworks-keyring
 	pkgdesc = Secure and unified container for user passwords
-	pkgver = 6.30.0
+	pkgver = 6.31.0
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-frameworks-keyring
 	arch = x86_64
@@ -34,7 +34,7 @@ pkgbase = sonic-frameworks-keyring
 	provides = kwallet
 	provides = org.freedesktop.secrets
 	conflicts = kwallet
-	source = sonic-frameworks-keyring-6.30.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-keyring/archive/refs/tags/6.30.0.tar.gz
-	sha256sums = 5b80c4dcb4f9b6f9a59def54db05c16d5f0da50dd29c090075d076e78e297a70
+	source = sonic-frameworks-keyring-6.31.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-keyring/archive/refs/tags/6.31.0.tar.gz
+	sha256sums = cb14ce3aa35193377834f8ffae19f934cee2da619432e7a3b5e84c3e53cdec4b
 
 pkgname = sonic-frameworks-keyring

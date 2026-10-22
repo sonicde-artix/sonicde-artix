@@ -1,6 +1,6 @@
 pkgbase = sonic-drawing-tablet
 	pkgdesc = GUI for Wacom Linux drivers that supports different button/pen layout profiles
-	pkgver = 6.7.5
+	pkgver = 6.8.0
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-drawing-tablet
 	arch = x86_64
@@ -36,7 +36,7 @@ pkgbase = sonic-drawing-tablet
 	conflicts = kcm-wacomtablet
 	conflicts = wacomtablet
 	replaces = kcm-wacomtablet
-	source = sonic-drawing-tablet-6.7.5.tar.gz::https://github.com/Sonic-DE/sonic-drawing-tablet/archive/refs/tags/6.7.5.tar.gz
-	sha256sums = b1217f705c54e121806f7addd2747ae6ba2b9782f1e3d6113a05aa75815f19d8
+	source = sonic-drawing-tablet-6.8.0.tar.gz::https://github.com/Sonic-DE/sonic-drawing-tablet/archive/refs/tags/6.8.0.tar.gz
+	sha256sums = 42a2af80c784b13f5de36030a6dfc2496d61d1ecfeb65b28be3e797bb75caf0b
 
 pkgname = sonic-drawing-tablet

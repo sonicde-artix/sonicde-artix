@@ -1,6 +1,6 @@
 pkgbase = sonic-frameworks-keyring-pam
 	pkgdesc = SonicDE keyring PAM integration
-	pkgver = 6.7.5
+	pkgver = 6.8.0
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-frameworks-keyring-pam
 	arch = x86_64
@@ -15,7 +15,7 @@ pkgbase = sonic-frameworks-keyring-pam
 	depends = sonic-frameworks-keyring
 	provides = kwallet-pam
 	conflicts = kwallet-pam
-	source = sonic-frameworks-keyring-pam-6.7.5.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-keyring-pam/archive/refs/tags/6.7.5.tar.gz
-	sha256sums = 4895d698f2b3c538f60553db92003a3fa1889619ca62a970e36664cf27edd7bc
+	source = sonic-frameworks-keyring-pam-6.8.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-keyring-pam/archive/refs/tags/6.8.0.tar.gz
+	sha256sums = 37865ddaee414f40bcdf1ab4846eafb41fade3bb2604927e2d1e6a9c281d8c0d
 
 pkgname = sonic-frameworks-keyring-pam

@@ -1,6 +1,6 @@
 pkgbase = sonic-daemon
 	pkgdesc = Extensible daemon for providing system level services
-	pkgver = 6.30.0
+	pkgver = 6.31.0
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-daemon
 	arch = x86_64
@@ -19,7 +19,7 @@ pkgbase = sonic-daemon
 	depends = sonic-frameworks-settings
 	provides = kded
 	conflicts = kded
-	source = sonic-daemon-6.30.0.tar.gz::https://github.com/Sonic-DE/sonic-daemon/archive/refs/tags/6.30.0.tar.gz
-	sha256sums = 1790dbd6f71ea3f0693331e2390a602ac284968ae497925a31b26a875602bd98
+	source = sonic-daemon-6.31.0.tar.gz::https://github.com/Sonic-DE/sonic-daemon/archive/refs/tags/6.31.0.tar.gz
+	sha256sums = b07d040a538fc95c470e9f905b393b8f56897887f70e79892b6735a2f7732303
 
 pkgname = sonic-daemon

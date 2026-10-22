@@ -1,6 +1,6 @@
 pkgbase = sonic-activity-manager-daemon
 	pkgdesc = System service to manage user activities and track the usage patterns
-	pkgver = 6.7.5
+	pkgver = 6.8.0
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-activity-manager-daemon
 	arch = x86_64
@@ -21,7 +21,7 @@ pkgbase = sonic-activity-manager-daemon
 	depends = sonic-frameworks-xml-gui
 	provides = kactivitymanagerd
 	conflicts = kactivitymanagerd
-	source = sonic-activity-manager-daemon-6.7.5.tar.gz::https://github.com/Sonic-DE/sonic-activity-manager-daemon/archive/refs/tags/6.7.5.tar.gz
-	sha256sums = 8b6270231b1928c9153a2209dadb0ff246d218756f73f624935545aecf70d1c0
+	source = sonic-activity-manager-daemon-6.8.0.tar.gz::https://github.com/Sonic-DE/sonic-activity-manager-daemon/archive/refs/tags/6.8.0.tar.gz
+	sha256sums = 6646d141e47256a1b41291b5064415e148a8d6175af635f4c1a0858955f5e2c0
 
 pkgname = sonic-activity-manager-daemon

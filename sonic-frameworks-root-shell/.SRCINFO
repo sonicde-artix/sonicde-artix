@@ -1,6 +1,6 @@
 pkgbase = sonic-frameworks-root-shell
 	pkgdesc = Integration with su for elevated privileges
-	pkgver = 6.30.0
+	pkgver = 6.31.0
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-frameworks-root-shell
 	arch = x86_64
@@ -20,7 +20,7 @@ pkgbase = sonic-frameworks-root-shell
 	depends = sonic-frameworks-settings
 	provides = kdesu
 	conflicts = kdesu
-	source = sonic-frameworks-root-shell-6.30.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-root-shell/archive/refs/tags/6.30.0.tar.gz
-	sha256sums = 28c60bc7c7693cf719875747b20cbf48d03f07cfba03f7da1a1be78d88ae48d1
+	source = sonic-frameworks-root-shell-6.31.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-root-shell/archive/refs/tags/6.31.0.tar.gz
+	sha256sums = 9f233f88160c91d7c4e8c14fe1f241b49f54b174a8324eba3fcead12d1348c69
 
 pkgname = sonic-frameworks-root-shell

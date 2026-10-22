@@ -1,6 +1,6 @@
 pkgbase = sonic-frameworks-data-views
 	pkgdesc = Widget addons for Qt Model/View
-	pkgver = 6.30.0
+	pkgver = 6.31.0
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-frameworks-data-views
 	arch = x86_64
@@ -15,7 +15,7 @@ pkgbase = sonic-frameworks-data-views
 	depends = qt6-base
 	provides = kitemviews
 	conflicts = kitemviews
-	source = sonic-frameworks-data-views-6.30.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-data-views/archive/refs/tags/6.30.0.tar.gz
-	sha256sums = c6fc3a6168c2e3dc95f6a43df1564ab593f0f4a3cec48f00271891a172181c46
+	source = sonic-frameworks-data-views-6.31.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-data-views/archive/refs/tags/6.31.0.tar.gz
+	sha256sums = dc320c492a8649f942b9a1768a0cef45dfe2bec8e0abc7aa79ff46ac8ddef816
 
 pkgname = sonic-frameworks-data-views

@@ -1,6 +1,6 @@
 pkgbase = sonic-thunderbolt
 	pkgdesc = SonicDE integration for controlling Thunderbolt devices
-	pkgver = 6.7.5
+	pkgver = 6.8.0
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-thunderbolt
 	arch = x86_64
@@ -21,7 +21,7 @@ pkgbase = sonic-thunderbolt
 	depends = sonic-frameworks-settings-utils
 	provides = plasma-thunderbolt
 	conflicts = plasma-thunderbolt
-	source = sonic-thunderbolt-6.7.5.tar.gz::https://github.com/Sonic-DE/sonic-thunderbolt/archive/refs/tags/6.7.5.tar.gz
-	sha256sums = a721de6caef2cc351fe4e3fa3c6260b1235e4a49c3c4650fcf91777c44bd8997
+	source = sonic-thunderbolt-6.8.0.tar.gz::https://github.com/Sonic-DE/sonic-thunderbolt/archive/refs/tags/6.8.0.tar.gz
+	sha256sums = 634ef4982e5e2d104c9f46ae7f570a82da18b31ab3663a3eb7c2ad6e4ba68278
 
 pkgname = sonic-thunderbolt

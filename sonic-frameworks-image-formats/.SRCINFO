@@ -1,7 +1,7 @@
 pkgbase = sonic-frameworks-image-formats
 	pkgdesc = Image format plugins for Qt 6
-	pkgver = 6.30.0
-	pkgrel = 2
+	pkgver = 6.31.0
+	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-frameworks-image-formats
 	arch = x86_64
 	groups = sonicde-frameworks
@@ -31,7 +31,7 @@ pkgbase = sonic-frameworks-image-formats
 	optdepends = sonic-frameworks-archive: plugin for Krita and OpenRaster images
 	provides = kimageformats
 	conflicts = kimageformats
-	source = sonic-frameworks-image-formats-6.30.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-image-formats/archive/refs/tags/6.30.0.tar.gz
-	sha256sums = ede0cfbaa3fea54f6fc0941dd12a78a43f14f408b60dcbb581406a81b98ed288
+	source = sonic-frameworks-image-formats-6.31.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-image-formats/archive/refs/tags/6.31.0.tar.gz
+	sha256sums = 01645074425dec983aa0e28673e5ed88845f5487b918adfa7a1b207831f9ed14
 
 pkgname = sonic-frameworks-image-formats

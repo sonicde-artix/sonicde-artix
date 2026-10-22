@@ -1,6 +1,6 @@
 pkgbase = sonic-frameworks-dbus
 	pkgdesc = Addons to QtDBus
-	pkgver = 6.30.0
+	pkgver = 6.31.0
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-frameworks-dbus
 	arch = x86_64
@@ -15,7 +15,7 @@ pkgbase = sonic-frameworks-dbus
 	depends = qt6-base
 	provides = kdbusaddons
 	conflicts = kdbusaddons
-	source = sonic-frameworks-dbus-6.30.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-dbus/archive/refs/tags/6.30.0.tar.gz
-	sha256sums = 761858dcfbb33a340a993d396cd7ac4faa8798fdffb701d2c86998147aae0f43
+	source = sonic-frameworks-dbus-6.31.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-dbus/archive/refs/tags/6.31.0.tar.gz
+	sha256sums = f7e5e76c05e73c4fd3e91d085e824a9b533d1135796e5fda0d22df5273af0b3b
 
 pkgname = sonic-frameworks-dbus

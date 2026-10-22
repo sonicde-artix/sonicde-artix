@@ -1,6 +1,6 @@
 pkgbase = sonic-frameworks-package
 	pkgdesc = Framework that lets applications manage user installable packages of non-binary assets
-	pkgver = 6.30.0
+	pkgver = 6.31.0
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-frameworks-package
 	arch = x86_64
@@ -19,7 +19,7 @@ pkgbase = sonic-frameworks-package
 	depends = sonic-frameworks-internationalization
 	provides = kpackage
 	conflicts = kpackage
-	source = sonic-frameworks-package-6.30.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-package/archive/refs/tags/6.30.0.tar.gz
-	sha256sums = 1f0de9b1d2b754115ce3cd96faa84960f55008f4687c374c70c1606b6dbd979a
+	source = sonic-frameworks-package-6.31.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-package/archive/refs/tags/6.31.0.tar.gz
+	sha256sums = 68d743017437d901f50f873cfe770f512e96584cf5664647e1f79c8823358616
 
 pkgname = sonic-frameworks-package

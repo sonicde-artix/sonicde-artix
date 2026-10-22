@@ -1,6 +1,6 @@
 pkgbase = sonic-write-daemon
 	pkgdesc = SonicDE daemon listening for wall and write messages
-	pkgver = 6.7.5
+	pkgver = 6.8.0
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-write-daemon
 	arch = x86_64
@@ -17,7 +17,7 @@ pkgbase = sonic-write-daemon
 	depends = sonic-frameworks-pseudo-terminal
 	provides = kwrited
 	conflicts = kwrited
-	source = sonic-write-daemon-6.7.5.tar.gz::https://github.com/Sonic-DE/sonic-write-daemon/archive/refs/tags/6.7.5.tar.gz
-	sha256sums = 1af05d1b647dda81b9f4ee256e4f247b501c6f7f44ee992a26cf7ade6f1bd51c
+	source = sonic-write-daemon-6.8.0.tar.gz::https://github.com/Sonic-DE/sonic-write-daemon/archive/refs/tags/6.8.0.tar.gz
+	sha256sums = bd29ccd2ae12ba0f460c22447c1ca494992887848aabc21663124c32047e19ad
 
 pkgname = sonic-write-daemon

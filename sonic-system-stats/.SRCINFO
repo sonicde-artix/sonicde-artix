@@ -1,6 +1,6 @@
 pkgbase = sonic-system-stats
 	pkgdesc = A plugin based system monitoring daemon
-	pkgver = 6.7.5
+	pkgver = 6.8.0
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-system-stats
 	arch = x86_64
@@ -24,7 +24,7 @@ pkgbase = sonic-system-stats
 	optdepends = openrc-settingsd: hostname1 service for system information on OpenRC
 	provides = ksystemstats
 	conflicts = ksystemstats
-	source = sonic-system-stats-6.7.5.tar.gz::https://github.com/Sonic-DE/sonic-system-stats/archive/refs/tags/6.7.5.tar.gz
-	sha256sums = 10938690f3b514b720e4b5c58d75decef6352ce5d9f1c6d06f4be5dff1e6b62f
+	source = sonic-system-stats-6.8.0.tar.gz::https://github.com/Sonic-DE/sonic-system-stats/archive/refs/tags/6.8.0.tar.gz
+	sha256sums = e627e2242ad46659f4cb776c55f8ec59d6a1af3103dc8b210ac9eb1abe01833c
 
 pkgname = sonic-system-stats

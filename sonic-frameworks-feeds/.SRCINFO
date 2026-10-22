@@ -1,6 +1,6 @@
 pkgbase = sonic-frameworks-feeds
 	pkgdesc = RSS/Atom parser library
-	pkgver = 6.30.0
+	pkgver = 6.31.0
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-frameworks-feeds
 	arch = x86_64
@@ -17,7 +17,7 @@ pkgbase = sonic-frameworks-feeds
 	depends = sonic-frameworks-text-codec
 	provides = syndication
 	conflicts = syndication
-	source = sonic-frameworks-feeds-6.30.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-feeds/archive/refs/tags/6.30.0.tar.gz
-	sha256sums = fa2f9c0329fd28f0d474508ed06434ec5ba8245dbc3ca113edee849d21a6a370
+	source = sonic-frameworks-feeds-6.31.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-feeds/archive/refs/tags/6.31.0.tar.gz
+	sha256sums = ff56f827104d0c05f037f8b55123791c4c70fa65785dfcff7256f75a6bdde443
 
 pkgname = sonic-frameworks-feeds

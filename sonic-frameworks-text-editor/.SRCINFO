@@ -1,6 +1,6 @@
 pkgbase = sonic-frameworks-text-editor
 	pkgdesc = Advanced embeddable text editor
-	pkgver = 6.30.0
+	pkgver = 6.31.0
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-frameworks-text-editor
 	arch = x86_64
@@ -37,7 +37,7 @@ pkgbase = sonic-frameworks-text-editor
 	optdepends = git: git integration
 	provides = ktexteditor
 	conflicts = ktexteditor
-	source = sonic-frameworks-text-editor-6.30.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-text-editor/archive/refs/tags/6.30.0.tar.gz
-	sha256sums = 4173a71692966c3bc2bd17fadf44f382fa591b937d5bc3741346c55f527999ef
+	source = sonic-frameworks-text-editor-6.31.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-text-editor/archive/refs/tags/6.31.0.tar.gz
+	sha256sums = b0ed0a0ca055e15fa222f38fde38d8b049c40e640d04490037fb072b64992c58
 
 pkgname = sonic-frameworks-text-editor

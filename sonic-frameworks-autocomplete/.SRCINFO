@@ -1,6 +1,6 @@
 pkgbase = sonic-frameworks-autocomplete
 	pkgdesc = Text completion helpers and widgets
-	pkgver = 6.30.0
+	pkgver = 6.31.0
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-frameworks-autocomplete
 	arch = x86_64
@@ -18,7 +18,7 @@ pkgbase = sonic-frameworks-autocomplete
 	depends = sonic-frameworks-widgets-addons
 	provides = kcompletion
 	conflicts = kcompletion
-	source = sonic-frameworks-autocomplete-6.30.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-autocomplete/archive/refs/tags/6.30.0.tar.gz
-	sha256sums = f6774110d6c4054f64ff613e7ae13e9549eb51fd1d04d7eca185856d84a4d52a
+	source = sonic-frameworks-autocomplete-6.31.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-autocomplete/archive/refs/tags/6.31.0.tar.gz
+	sha256sums = 74da7d7cba14724d231a3709f829f2a006c408e02722f8f17ab3a2d970a47a07
 
 pkgname = sonic-frameworks-autocomplete

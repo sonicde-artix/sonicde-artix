@@ -1,7 +1,7 @@
 pkgbase = sonic-network-manager
 	pkgdesc = SonicDE applet written in QML for managing network connections
-	pkgver = 6.7.5
-	pkgrel = 3
+	pkgver = 6.8.0
+	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-network-manager
 	arch = x86_64
 	groups = sonicde
@@ -48,7 +48,7 @@ pkgbase = sonic-network-manager
 	optdepends = elogind: sleep and resume notifications through login1
 	provides = plasma-nm
 	conflicts = plasma-nm
-	source = sonic-network-manager-6.7.5.tar.gz::https://github.com/Sonic-DE/sonic-network-manager/archive/refs/tags/6.7.5.tar.gz
-	sha256sums = bd688443fd21785946d28bf352dfed271617adba9abb80595dac76a234ae4c88
+	source = sonic-network-manager-6.8.0.tar.gz::https://github.com/Sonic-DE/sonic-network-manager/archive/refs/tags/6.8.0.tar.gz
+	sha256sums = 007a3fc1d0138d1648648fe5a2440d3c92d243ef12f9a53dd5185afd4e9de4bf
 
 pkgname = sonic-network-manager

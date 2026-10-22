@@ -1,7 +1,7 @@
 pkgbase = sonic-bluetooth-runtime
 	pkgdesc = Integrate Bluetooth within SonicDE components
-	pkgver = 6.7.5
-	pkgrel = 3
+	pkgver = 6.8.0
+	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-bluetooth-runtime
 	arch = x86_64
 	groups = sonicde
@@ -33,7 +33,7 @@ pkgbase = sonic-bluetooth-runtime
 	optdepends = elogind: sleep and resume notifications through login1
 	provides = bluedevil
 	conflicts = bluedevil
-	source = sonic-bluetooth-runtime-6.7.5.tar.gz::https://github.com/Sonic-DE/sonic-bluetooth-runtime/archive/refs/tags/6.7.5.tar.gz
-	sha256sums = 8ea0c52a0ee8f6879ea51430e44e92f5eac0d1b1ba679fe6266933125fc6247f
+	source = sonic-bluetooth-runtime-6.8.0.tar.gz::https://github.com/Sonic-DE/sonic-bluetooth-runtime/archive/refs/tags/6.8.0.tar.gz
+	sha256sums = 766387d75bc9a4ccc889e0f3bbc9fb8e4700dc502088b33d49fb12ad7f513cb4
 
 pkgname = sonic-bluetooth-runtime

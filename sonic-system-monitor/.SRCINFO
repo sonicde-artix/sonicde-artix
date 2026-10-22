@@ -1,6 +1,6 @@
 pkgbase = sonic-system-monitor
 	pkgdesc = An interface for monitoring system sensors, process information and other system resources
-	pkgver = 6.7.5
+	pkgver = 6.8.0
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-system-monitor
 	arch = x86_64
@@ -33,7 +33,7 @@ pkgbase = sonic-system-monitor
 	provides = plasma-systemmonitor
 	conflicts = plasma-systemmonitor
 	replaces = ksysguard
-	source = sonic-system-monitor-6.7.5.tar.gz::https://github.com/Sonic-DE/sonic-system-monitor/archive/refs/tags/6.7.5.tar.gz
-	sha256sums = ade7a2fd6363f51d33b681f73062ab68de265d95c45830ac604f0b96f30a4b8c
+	source = sonic-system-monitor-6.8.0.tar.gz::https://github.com/Sonic-DE/sonic-system-monitor/archive/refs/tags/6.8.0.tar.gz
+	sha256sums = c5871c654cedf848dd2f625d5b885805fc67c59ec21d7d8736a255ef1a18e921
 
 pkgname = sonic-system-monitor

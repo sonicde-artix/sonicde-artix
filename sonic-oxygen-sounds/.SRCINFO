@@ -1,16 +1,17 @@
 pkgbase = sonic-oxygen-sounds
 	pkgdesc = The Oxygen Sound Theme
-	pkgver = 6.7.5
+	pkgver = 6.8.0
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-oxygen-sounds
 	arch = any
 	groups = sonicde
 	license = LGPL-2.0-or-later
+	makedepends = qt6-base
 	makedepends = sonic-frameworks-cmake-modules
 	provides = oxygen-sounds
 	conflicts = oxygen-sounds
 	options = !debug
-	source = sonic-oxygen-sounds-6.7.5.tar.gz::https://github.com/Sonic-DE/sonic-oxygen-sounds/archive/refs/tags/6.7.5.tar.gz
-	sha256sums = a6df5e6de2014df4f0db274ef49b6422b9362a0c10d2e4bc7f572abfa1784377
+	source = sonic-oxygen-sounds-6.8.0.tar.gz::https://github.com/Sonic-DE/sonic-oxygen-sounds/archive/refs/tags/6.8.0.tar.gz
+	sha256sums = b3efc535da0d1061c245051606da0c301581c4758df6ffd008e8ae44e0f9ede9
 
 pkgname = sonic-oxygen-sounds

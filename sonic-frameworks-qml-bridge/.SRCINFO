@@ -1,6 +1,6 @@
 pkgbase = sonic-frameworks-qml-bridge
 	pkgdesc = Provides integration of QML and SonicDE Frameworks
-	pkgver = 6.30.0.1
+	pkgver = 6.31.0
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-frameworks-qml-bridge
 	arch = x86_64
@@ -22,7 +22,7 @@ pkgbase = sonic-frameworks-qml-bridge
 	depends = sonic-frameworks-widgets-addons
 	provides = kdeclarative
 	conflicts = kdeclarative
-	source = sonic-frameworks-qml-bridge-6.30.0.1.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-qml-bridge/archive/refs/tags/6.30.0.1.tar.gz
-	sha256sums = 4ad6cd456613b670b6ee66eab0cedc2daf76c6618918afb880c7333f9b84f089
+	source = sonic-frameworks-qml-bridge-6.31.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-qml-bridge/archive/refs/tags/6.31.0.tar.gz
+	sha256sums = ef004ec9fb7fddbdd35862f107024116aa87bdc4b7a6c4b4b377e9f05abbbda5
 
 pkgname = sonic-frameworks-qml-bridge

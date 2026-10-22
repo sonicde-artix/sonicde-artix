@@ -1,7 +1,7 @@
 pkgbase = sonic-workspace-addons
 	pkgdesc = All kind of addons to improve your SonicDE experience
-	pkgver = 6.7.5
-	pkgrel = 3
+	pkgver = 6.8.0
+	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-workspace-addons
 	arch = x86_64
 	groups = sonicde
@@ -52,7 +52,7 @@ pkgbase = sonic-workspace-addons
 	optdepends = elogind: login1 sleep and resume notifications
 	provides = kdeplasma-addons
 	conflicts = kdeplasma-addons
-	source = sonic-workspace-addons-6.7.5.tar.gz::https://github.com/Sonic-DE/sonic-workspace-addons/archive/refs/tags/6.7.5.tar.gz
-	sha256sums = ef441e73bb425abf5bfeca0f8aa600a3913cf5c802bce49f51db2afa37d605a2
+	source = sonic-workspace-addons-6.8.0.tar.gz::https://github.com/Sonic-DE/sonic-workspace-addons/archive/refs/tags/6.8.0.tar.gz
+	sha256sums = 8dea587ca5528d60618caed972445afd94aef4a53bf2aa2e67d4fbf762400123
 
 pkgname = sonic-workspace-addons

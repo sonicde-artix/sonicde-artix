@@ -1,6 +1,6 @@
 pkgbase = sonic-frameworks-bookmarks
 	pkgdesc = Support for bookmarks and the XBEL format
-	pkgver = 6.30.0
+	pkgver = 6.31.0
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-frameworks-bookmarks
 	arch = x86_64
@@ -18,7 +18,7 @@ pkgbase = sonic-frameworks-bookmarks
 	depends = sonic-frameworks-widgets-addons
 	provides = kbookmarks
 	conflicts = kbookmarks
-	source = sonic-frameworks-bookmarks-6.30.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-bookmarks/archive/refs/tags/6.30.0.tar.gz
-	sha256sums = b27e69aa6c207a5817056d83d0a78c623ae12a49b459e354626edd3782750785
+	source = sonic-frameworks-bookmarks-6.31.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-bookmarks/archive/refs/tags/6.31.0.tar.gz
+	sha256sums = 218f4643bb1663c07324334f10927bab900a5e5b39b8ea937059b95b3c66ba8c
 
 pkgname = sonic-frameworks-bookmarks

@@ -1,6 +1,6 @@
 pkgbase = sonic-oxygen
 	pkgdesc = SonicDE Oxygen style
-	pkgver = 6.7.5
+	pkgver = 6.8.0
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-oxygen
 	arch = x86_64
@@ -28,8 +28,8 @@ pkgbase = sonic-oxygen
 	depends = sonic-oxygen-icons
 	provides = oxygen
 	conflicts = oxygen
-	source = sonic-oxygen-6.7.5.tar.gz::https://github.com/Sonic-DE/sonic-oxygen/archive/refs/tags/6.7.5.tar.gz
-	sha256sums = 935ee09912c5a13931378957e3a0cab4709739d3555ee229ff580502bb45d217
+	source = sonic-oxygen-6.8.0.tar.gz::https://github.com/Sonic-DE/sonic-oxygen/archive/refs/tags/6.8.0.tar.gz
+	sha256sums = e90f4020e7247d2d12774b795fe6cdcd0ee6c58ec44745f54fa950da26a140b7
 
 pkgname = sonic-oxygen
 	depends = glibc

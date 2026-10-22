@@ -1,6 +1,6 @@
 pkgbase = sonic-system-log
 	pkgdesc = System log viewer tool
-	pkgver = 26.08.0
+	pkgver = 26.08.2
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-system-log
 	arch = x86_64
@@ -29,7 +29,7 @@ pkgbase = sonic-system-log
 	depends = sonic-frameworks-xml-gui
 	provides = ksystemlog
 	conflicts = ksystemlog
-	source = sonic-system-log-26.08.0.tar.gz::https://github.com/Sonic-DE/sonic-system-log/archive/refs/tags/26.08.0.tar.gz
-	sha256sums = 94655fd8570d6ff52ca37e08997d642365a23c430aa178e388aaef48a400258c
+	source = sonic-system-log-26.08.2.tar.gz::https://github.com/Sonic-DE/sonic-system-log/archive/refs/tags/26.08.2.tar.gz
+	sha256sums = 85180d7c8dfe50d6329bf4926a203f74d9ad47a4d9d3412d4255264c52d4be0f
 
 pkgname = sonic-system-log

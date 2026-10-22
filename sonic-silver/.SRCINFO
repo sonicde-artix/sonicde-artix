@@ -1,7 +1,7 @@
 pkgbase = sonic-silver
 	pkgdesc = Artwork, styles and assets for the Silver visual style for SonicDE
-	pkgver = 6.7.5
-	pkgrel = 3
+	pkgver = 6.8.0
+	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-silver
 	arch = x86_64
 	groups = sonicde
@@ -29,7 +29,7 @@ pkgbase = sonic-silver
 	provides = sonic-silver-theme
 	conflicts = breeze
 	conflicts = sonic-silver-theme
-	source = sonic-silver-6.7.5.tar.gz::https://github.com/Sonic-DE/sonic-silver/archive/refs/tags/6.7.5.tar.gz
-	sha256sums = 3681dc23cbbd03644cbef717fa63df36661cae2b9438dadeafd4771fdff58922
+	source = sonic-silver-6.8.0.tar.gz::https://github.com/Sonic-DE/sonic-silver/archive/refs/tags/6.8.0.tar.gz
+	sha256sums = 3d8abed948ac4b7be07929e9131d7930826bc2a7a29c47c49bfcb53a4d8203fc
 
 pkgname = sonic-silver

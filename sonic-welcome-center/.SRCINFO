@@ -1,7 +1,7 @@
 pkgbase = sonic-welcome-center
 	pkgdesc = A friendly onboarding wizard for SonicDE
-	pkgver = 6.7.5
-	pkgrel = 3
+	pkgver = 6.8.0
+	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-welcome-center
 	arch = x86_64
 	groups = sonicde
@@ -32,7 +32,7 @@ pkgbase = sonic-welcome-center
 	depends = sonic-plasma5-support-library
 	provides = plasma-welcome
 	conflicts = plasma-welcome
-	source = sonic-welcome-center-6.7.5.tar.gz::https://github.com/Sonic-DE/sonic-welcome-center/archive/refs/tags/6.7.5.tar.gz
-	sha256sums = 2ff1f43155044784975e342af5f962aac6ed4b8968e577fdf2d5d30afa474fbf
+	source = sonic-welcome-center-6.8.0.tar.gz::https://github.com/Sonic-DE/sonic-welcome-center/archive/refs/tags/6.8.0.tar.gz
+	sha256sums = 675f9397febe1913cd541345fa5d0dfb328af176d1aa04dda347ce4272989ca0
 
 pkgname = sonic-welcome-center

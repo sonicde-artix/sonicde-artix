@@ -1,6 +1,6 @@
 pkgbase = sonic-frameworks-text-widgets
 	pkgdesc = Advanced text editing widgets
-	pkgver = 6.30.0
+	pkgver = 6.31.0
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-frameworks-text-widgets
 	arch = x86_64
@@ -21,7 +21,7 @@ pkgbase = sonic-frameworks-text-widgets
 	depends = sonic-frameworks-widgets-addons
 	provides = ktextwidgets
 	conflicts = ktextwidgets
-	source = sonic-frameworks-text-widgets-6.30.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-text-widgets/archive/refs/tags/6.30.0.tar.gz
-	sha256sums = e5949c8cf0fd027a74db2d600b9d4005f071a302eabc7b5fba65369538bd2d9e
+	source = sonic-frameworks-text-widgets-6.31.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-text-widgets/archive/refs/tags/6.31.0.tar.gz
+	sha256sums = a93dae591de1a21ea6b3a71b6dd1e58cc49cb02a9116e92d3f42c5bfb38a7e08
 
 pkgname = sonic-frameworks-text-widgets

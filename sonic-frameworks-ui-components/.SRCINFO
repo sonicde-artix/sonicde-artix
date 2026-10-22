@@ -1,6 +1,6 @@
 pkgbase = sonic-frameworks-ui-components
 	pkgdesc = Document centric plugin system
-	pkgver = 6.30.0
+	pkgver = 6.31.0
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-frameworks-ui-components
 	arch = x86_64
@@ -21,7 +21,7 @@ pkgbase = sonic-frameworks-ui-components
 	depends = sonic-frameworks-xml-gui
 	provides = kparts
 	conflicts = kparts
-	source = sonic-frameworks-ui-components-6.30.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-ui-components/archive/refs/tags/6.30.0.tar.gz
-	sha256sums = 8542bece3564e73a8ded014835db0f063b6eb69045cc28c2a072a3c3c41627ea
+	source = sonic-frameworks-ui-components-6.31.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-ui-components/archive/refs/tags/6.31.0.tar.gz
+	sha256sums = 10ea1d1b80b52c3245587f3d55969597a737b7578f1b3e2bb1f5242668525098
 
 pkgname = sonic-frameworks-ui-components
