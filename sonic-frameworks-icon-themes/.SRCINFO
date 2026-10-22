@@ -1,6 +1,6 @@
 pkgbase = sonic-frameworks-icon-themes
 	pkgdesc = Support for icon themes
-	pkgver = 6.31.0
+	pkgver = 6.31.0.1
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-frameworks-icon-themes
 	arch = x86_64
@@ -23,7 +23,7 @@ pkgbase = sonic-frameworks-icon-themes
 	optdepends = qt6-declarative: QML bindings
 	provides = kiconthemes
 	conflicts = kiconthemes
-	source = sonic-frameworks-icon-themes-6.31.0.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-icon-themes/archive/refs/tags/6.31.0.tar.gz
-	sha256sums = 373382f881b3321c38d8fc4c1444f3cac8ef7f7eb8922ffdb8069583ef79111a
+	source = sonic-frameworks-icon-themes-6.31.0.1.tar.gz::https://github.com/Sonic-DE/sonic-frameworks-icon-themes/archive/refs/tags/6.31.0.1.tar.gz
+	sha256sums = efff90128665a5fe43cab271d68f605d26a354cd492e68a990d25c83be77fc81
 
 pkgname = sonic-frameworks-icon-themes

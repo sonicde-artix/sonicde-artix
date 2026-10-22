@@ -1,7 +1,7 @@
 pkgbase = sonic-login-manager
 	pkgdesc = Sonic Login Manager
-	pkgver = 6.8.0
-	pkgrel = 2
+	pkgver = 6.8.0.2
+	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-login-manager
 	arch = x86_64
 	groups = sonicde
@@ -36,7 +36,7 @@ pkgbase = sonic-login-manager
 	optdepends = openrc-settingsd: locale1 service for keyboard defaults on OpenRC
 	provides = plasma-login-manager
 	conflicts = plasma-login-manager
-	source = sonic-login-manager-6.8.0.tar.gz::https://github.com/Sonic-DE/sonic-login-manager/archive/refs/tags/6.8.0.tar.gz
-	sha256sums = cd5bf3cdf0bbd8b6b76d41af854c1d061700ef602f20700ec098baa60228397d
+	source = sonic-login-manager-6.8.0.2.tar.gz::https://github.com/Sonic-DE/sonic-login-manager/archive/refs/tags/6.8.0.2.tar.gz
+	sha256sums = c96e6a1c467f1a64daef7d0f2cace544647fdce677b5b8ba074f159413cbe82a
 
 pkgname = sonic-login-manager
