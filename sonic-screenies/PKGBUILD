@@ -3,21 +3,23 @@
 
 pkgname=sonic-screenies
 pkgver=6.8.0
-pkgrel=1
+pkgrel=3
 pkgdesc='SonicDE screenshot capture utility'
 arch=('x86_64')
 url='https://github.com/Sonic-DE/sonic-screenies'
 license=('GPL-2.0-or-later')
 depends=(
+	'ffmpeg'
 	'glibc'
 	'libgcc'
+	'libpulse'
 	'libstdc++'
 	'libxcb'
-	'opencv'
 	'qt6-base'
 	'qt6-declarative'
 	'qt6-imageformats'
 	'qt6-multimedia'
+	'qt6-multimedia-ffmpeg'
 	'sonic-frameworks-app-info'
 	'sonic-frameworks-barcode'
 	'sonic-frameworks-core-addons'
@@ -37,7 +39,6 @@ depends=(
 	'sonic-frameworks-widgets-addons'
 	'sonic-frameworks-windowsystem'
 	'sonic-frameworks-xml-gui'
-	'sonic-pipewire'
 	'sonic-quick-image-editor'
 	'tesseract'
 	'xcb-util'
@@ -45,6 +46,7 @@ depends=(
 	'xcb-util-image'
 )
 makedepends=(
+	'opencv' # unused upstream, but still in CMakeLists
 	'sonic-frameworks-cmake-modules'
 	'sonic-frameworks-doctools'
 )
