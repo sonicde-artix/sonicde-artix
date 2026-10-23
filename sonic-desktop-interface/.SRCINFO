@@ -1,6 +1,6 @@
 pkgbase = sonic-desktop-interface
 	pkgdesc = Sonic Desktop Interface
-	pkgver = 6.8.0.1
+	pkgver = 6.8.0.2
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-desktop-interface
 	arch = x86_64
@@ -94,9 +94,9 @@ pkgbase = sonic-desktop-interface
 	optdepends = openrc-settingsd: timedate1 D-Bus service for OpenRC
 	provides = plasma-desktop
 	conflicts = plasma-desktop
-	source = sonic-desktop-interface-6.8.0.1.tar.gz::https://github.com/Sonic-DE/sonic-desktop-interface/archive/refs/tags/6.8.0.1.tar.gz
+	source = sonic-desktop-interface-6.8.0.2.tar.gz::https://github.com/Sonic-DE/sonic-desktop-interface/archive/refs/tags/6.8.0.2.tar.gz
 	source = 0001-add-explicit-input-backend-options.patch
-	sha256sums = 63a9da9c9a07e8b252ec195784fafbea462bb44d4ef9d629f123b0712ec2f510
+	sha256sums = fc097676046816acc35fbf4589127f7970235a095029a06d560943fe95cf6ca3
 	sha256sums = 63afec950ae88f89fcf206b8e40aab3dcc4f5a4df6f456b31ad3ebf20158f440
 
 pkgname = sonic-desktop-interface

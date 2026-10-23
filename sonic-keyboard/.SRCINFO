@@ -1,7 +1,7 @@
 pkgbase = sonic-keyboard
 	pkgdesc = Virtual keyboard for Qt-based desktops with SonicDE X11 integration
 	pkgver = 6.8.1
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/Sonic-DE/sonic-keyboard
 	arch = x86_64
 	groups = sonicde
@@ -24,6 +24,7 @@ pkgbase = sonic-keyboard
 	depends = sonic-frameworks-settings
 	depends = sonic-frameworks-settings-utils
 	depends = sonic-interface-libraries
+	provides = plasma-keyboard
 	conflicts = plasma-keyboard
 	source = sonic-keyboard-6.8.1.tar.gz::https://github.com/Sonic-DE/sonic-keyboard/archive/refs/tags/6.8.1.tar.gz
 	sha256sums = 189377c5f952e5133c1c92f3b30e5eb396513ee4da88a9d414c16148e0fba4fa
