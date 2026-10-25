@@ -1,6 +1,6 @@
 pkgbase = sonic-win
 	pkgdesc = An easy to use, but flexible, X Window Manager
-	pkgver = 6.8.0.1
+	pkgver = 6.8.0.2
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-win
 	install = sonic-win.install
@@ -67,7 +67,7 @@ pkgbase = sonic-win
 	optdepends = openrc-settingsd: locale1 service for OpenRC
 	provides = kwin-x11
 	conflicts = kwin-x11
-	source = sonic-win-6.8.0.1.tar.gz::https://github.com/Sonic-DE/sonic-win/archive/refs/tags/6.8.0.1.tar.gz
-	sha256sums = 563981da1ad3f615ff8290321f0bf195b253963db7466c83940ff7c513aaabae
+	source = sonic-win-6.8.0.2.tar.gz::https://github.com/Sonic-DE/sonic-win/archive/refs/tags/6.8.0.2.tar.gz
+	sha256sums = fcd4d0165b415a0e47e664d8d227967c8c5726bbee37c2716eedd2228651a8e8
 
 pkgname = sonic-win

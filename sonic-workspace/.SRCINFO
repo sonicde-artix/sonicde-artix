@@ -1,6 +1,6 @@
 pkgbase = sonic-workspace
 	pkgdesc = SonicDE workspace components
-	pkgver = 6.8.0.3
+	pkgver = 6.8.0.4
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-workspace
 	arch = x86_64
@@ -124,9 +124,9 @@ pkgbase = sonic-workspace
 	conflicts = plasma-x11-session
 	conflicts = sonic-x11-session
 	replaces = sonic-x11-session
-	source = sonic-workspace-6.8.0.3.tar.gz::https://github.com/Sonic-DE/sonic-workspace/archive/refs/tags/6.8.0.3.tar.gz
+	source = sonic-workspace-6.8.0.4.tar.gz::https://github.com/Sonic-DE/sonic-workspace/archive/refs/tags/6.8.0.4.tar.gz
 	source = build-systemd-option.patch
-	sha256sums = a35da39d5977b4c0c27c7d4929dab86e1bfcebaa0f1cdbaa85352d942c400160
+	sha256sums = 7101b124adc183d7dab4e6af9e04afd7f224f76c48ea80274874f055641ad187
 	sha256sums = 46d21bdb2347afe7ee313196f4296cfc91f4e16e68eca9f0da3dcae42663a63d
 
 pkgname = sonic-workspace
