@@ -4,8 +4,8 @@
 : "${USE_SYSTEMD:=1}"
 
 pkgname=sonic-screenlocker
-pkgver=6.8.0.1
-pkgrel=2
+pkgver=6.8.0.2
+pkgrel=1
 pkgdesc='Library and components for secure lock screen architecture'
 arch=('x86_64')
 url='https://github.com/Sonic-DE/sonic-screenlocker'
@@ -55,7 +55,7 @@ source=(
 	'kde-fingerprint.pam'
 	'kde-smartcard.pam'
 )
-sha256sums=('d75ac0e0c7fa3418bca923a65e90ce9383a5e3b2bc8a9c18cc38a40500e80101'
+sha256sums=('32b190a21a5ca2e7d8d2c90068de9a69839d46ac557d78a5067dfd471a1f67a9'
             'adba7bb7c27eb3a572e5e9d3cea0dbeebe59d3634472d1863d14fe892cb13b2b'
             '32734b4e1ec8b7f7e32b6cb2d68285c5c4f15f53736bba085096e76095181241'
             '5d9c31cbf66e8e455b9559c929f184efd598f714743d5a1e6ce20adb44dc4b2d')
