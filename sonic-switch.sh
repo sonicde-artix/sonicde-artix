@@ -10,7 +10,7 @@ set -eu
 
 # Constants
 
-VER='0.8.0'
+VER='0.9.0'
 HOMEPAGE='https://sonicde.org'
 REPO_HOMEPAGE='https://sonicde-artix.github.io'
 
@@ -26,7 +26,6 @@ REPO_NAME_TPL='sonicde-%s'
 REPO_URL_TPL='https://github.com/sonicde-artix/%s/releases/download/$arch'
 
 KNOWN_LMS='emptty gdm greetd lemurs lightdm lxdm ly plasmalogin sddm slim soniclogin xdm'
-LOG=$HOME/sonic-switch.log
 NUL=/dev/null
 
 DISTRO_TYPE='Artix Linux'
@@ -39,10 +38,9 @@ CHOOSE_BINPKG_REPO_MSG='Please select the SonicDE repository you want to use:'
 FPRINT_MSG='Please compare the key fingerprint to the one at %s. Does it look right?'
 INTRO_MSG='SonicDE.org sonic-switch.sh, version: %s.
 
-This script will install SonicDE on your system. It will restart your graphical session so please save all your work. It will also replace any conflicting KDE components with the SonicDE equivalents.
+This script will install SonicDE on your system. Please run it from a terminal only! The script will try to automatically replace any conflicting KDE components with the SonicDE equivalents. If that fails, please interactively answer any questions.
 '
-INSTALL_MSG='The installation of the SonicDE packages will start in %d seconds. It''s running in the background to continue in case your GUI session is getting terminated. You can find an installation log at %s.'
-LM_SWITCH_MSG='You''re currently using the `%s` login manager. SonicDE comes with the Sonic Login Manager which is highly recommended when migrating from Wayland-based setups. Do you want to switch to the Sonic Login Manager?'
+LM_SWITCH_MSG='SonicDE comes with the Sonic Login Manager which is highly recommended when migrating from Wayland-based setups. Do you want to switch to the Sonic Login Manager?'
 THANKS_MSG='Thank you for choosing SonicDE! Please see %s for any further information.'
 
 
@@ -58,15 +56,14 @@ WRONG_FPRINT_ERR='Wrong fingerprint. Aborting.'
 
 chooserepo() {
 	printf '%s\n' "$1"
-	printf '%s\n' "$2" | cut -d '|' -f 1 | grep -n '.*' | sed 's/:/) /g'
+	printf '%s\n' "$2" | cut -d '|' -f 1 | nl -b a -w 1 -s ') '
+	printf '0) exit script\n'
 	_max=$(printf '%s\n' "$2" | wc -l)
-	printf '0:exit script\n'
 	while :; do
 		IFS= read -r _choice || die 1 'Input closed.'
-		test "$_choice" = 0 && die 1 'Exiting.'
 		case $_choice in
+			0) die 1 'Exiting.' ;;
 			''|*[!0-9]*) continue ;;
-			*) : ;;
 		esac
 		test $_choice -gt 0 -a $_choice -le $_max && break
 	done
@@ -90,6 +87,24 @@ msg() {
 	printf "\n$fstring\n" "$@"
 }
 
+svenable() {
+	case "$1" in
+		dinit) $2 dinitctl enable "$3" ;;
+		openrc) $2 rc-update add "$3" default ;;
+		runit) $2 ln -s /etc/runit/sv/$3 /run/runit/service/ ;;
+		s6) $2 s6 set enable $3 && $2 s6 set commit && $2 s6 live install ;;
+	esac
+}
+
+svdisable() {
+	case "$1" in
+		dinit) $2 dinitctl disable "$3" ;;
+		openrc) $2 rc-update del "$3" default ;;
+		runit) $2 rm /run/runit/service/$3 ;;
+		s6) $2 s6 set disable $3 ;;
+	esac
+}
+
 svstart() {
 	case "$1" in
 		dinit) $2 dinitctl start "$3" ;;
@@ -99,14 +114,13 @@ svstart() {
 	esac
 }
 
-svstopstr() {
+svstop() {
 	case "$1" in
-		dinit) _cmd="dinitctl stop '$2'" ;;
-		openrc) _cmd="rc-service '$2' stop" ;;
-		runit) _cmd="sv stop '$2'" ;;
-		s6) _cmd="s6-rc stop '$2'" ;;
+		dinit) $2 dinitctl stop "$3" ;;
+		openrc) $2 rc-service "$3" stop ;;
+		runit) $2 sv stop "$3" ;;
+		s6) $2 s6-rc stop "$3" ;;
 	esac
-	printf '%s\n' "$_cmd"
 }
 
 yesno() {
@@ -133,9 +147,11 @@ test -n "${fetch:-}" || die 1 "$NO_CURL_WGET_ERR"
 sudo=$(command -v sudo || command -v doas) || die 1 "$NO_DOAS_SUDO_ERR"
 grep -Eq "$OS_RELEASE_RE" /etc/os-release || die 1 "$DISTRO_ERR" "$DISTRO_TYPE"
 
+init=$(findinit)
+
 packey="$sudo pacman-key"
 pacinst="$sudo pacman --sync --needed"
-pkgs='sonicde-meta'
+pkgs="sonicde-meta-$init"
 slminst=
 
 if pacman -Qi $pkgs >$NUL 2>&1 ; then
@@ -174,78 +190,18 @@ fi
 
 msg 'Analyzing your login manager setup'
 lmname=$(findloginman)
-if [ -z "$lmname" ] ; then
-	msg 'Couldn''t identify your login manager. Keeping it.'
-elif [ "$lmname" != soniclogin ] && yesno "$LM_SWITCH_MSG" "$lmname" ; then
+if [ "$lmname" != soniclogin ] && yesno "$LM_SWITCH_MSG" "$lmname" ; then
 	slminst=1
 fi
 
-msg 'Updating your system:'
-$pacinst --refresh --sysupgrade --noconfirm
+msg 'Installing SonicDE'
+yes | $pacinst --refresh --sysupgrade --noconfirm "$pkgs" 2>$NUL ||
+	$pacinst --refresh --sysupgrade "$pkgs"
 
-msg 'Installing the dependencies of SonicDE:'
-$pacinst --print --print-format '%r %n' $pkgs > deps
-while read -r repo pkg; do
-	test "$repo" = "$dbname" && continue
-	extdeps="${extdeps:-} ${pkg}"
-done < deps
-test -n "${extdeps:-}" && $pacinst --asdeps --noconfirm $extdeps
-
-msg 'Downloading the SonicDE packages:'
-yes | $pacinst --downloadonly $pkgs
-
-msg 'Assembling the installation script'
-printf 'set -eu; exec >> ''%s'' 2>&1; sleep 3
-	yes | pacman --sync --needed %s\n' "$LOG" "$pkgs" > install.sh
-init=$(findinit)
 if [ "$slminst" = 1 ] ; then
-	test "$init" = dinit && cat >> install.sh <<-DINIT
-		dinitctl stop '$lmname'
-		dinitctl disable '$lmname'
-		yes | pacman -S --needed 'sonic-login-manager-$init'
-		dinitctl enable soniclogin
-		dinitctl start soniclogin
-	DINIT
-	test "$init" = openrc && cat >> install.sh <<-OPENRC
-		rc-service '$lmname' stop
-		rc-update del '$lmname' default
-		yes | pacman -S --needed 'sonic-login-manager-$init'
-		rc-update add soniclogin default
-		rc-service soniclogin start
-	OPENRC
-	test "$init" = runit && cat >> install.sh <<-RUNIT
-		sv stop '$lmname'
-		rm /run/runit/service/'$lmname'
-		yes | pacman -S --needed 'sonic-login-manager-$init'
-		ln -s /etc/runit/sv/soniclogin /run/runit/service/
-		sv start soniclogin
-	RUNIT
-	test "$init" = s6 && cat >> install.sh <<-S6
-		s6-rc stop '$lmname'
-		s6 set disable '$lmname'
-		yes | pacman -S --needed 'sonic-login-manager-$init'
-		s6 set enable soniclogin
-		s6-rc start soniclogin
-		s6 set commit && s6 live install
-	S6
+	svstop "$init" "$sudo" "$lmname" || :
+	svdisable "$init" "$sudo" "$lmname" || :
+	yes | $pacinst sonic-login-manager-$init
+	svstart "$init" "$sudo" soniclogin
+	svenable "$init" "$sudo" soniclogin
 fi
-chmod a+x install.sh
-
-msg 'Initializing the job scheduler'
-deinst=
-if ! pacman -Q at >$NUL ; then
-	yes | $pacinst at at-$init
-	deinst="yes | pacman -Rns at at-$init"
-fi
-if ! ps -eo comm | grep -q '^atd$' ; then
-	svstart "$init" "$sudo" atd
-	svstopstr "$init" atd >> install.sh
-fi
-printf '%s\n' "$deinst" >> install.sh
-
-msg "$INSTALL_MSG" 3 "$LOG"
-msg "$THANKS_MSG" "$HOMEPAGE"
-
-: > "$LOG"
-$sudo at -f "$(pwd)"/install.sh now
-tail -f "$LOG"
