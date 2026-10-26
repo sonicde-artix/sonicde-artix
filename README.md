@@ -2,23 +2,25 @@
 
 # SonicDE Packages for Artix Linux Systems
 
-This third-party repository provides [SonicDE](https://sonicde.org) x86_64 binary  packages for [Artix Linux](https://artixlinux.org). SonicDE, or the Sonic Desktop Environment, aims to preserve and improve the X11-specific aspects of KDE. You can learn more about SonicDE at [sonicde.org](https://sonicde.org/).
+This third-party repository provides [SonicDE](https://sonicde.org) x86_64 binary packages for [Artix Linux](https://artixlinux.org). SonicDE, or the Sonic Desktop Environment, aims to preserve and improve the X11-specific aspects of KDE. You can learn more about SonicDE at [sonicde.org](https://sonicde.org/).
 
 ## Switching to SonicDE Automatically
 
 You can download and run the [`sonic-switch.sh`](sonic-switch.sh) script to automatically switch to SonicDE on your Artix Linux system:
 
-```
+```shell
 curl -O https://sonicde-artix.github.io/sonic-switch.sh
 sh sonic-switch.sh
-````
+```
 
 You'll be asked to compare the fingerprint of the OpenPGP key used to sign the packages with this one:
 ```text
-D166 B8DB 57D1 55D5 7B4C  469F 72AA A517 26BC 3C29
+D166 B8DB 57D1 55D5 7B4C 469F 72AA A517 26BC 3C29
 ```
 
-The script may restart your graphical session so please save all your work beforehand. It will also silently replace the conflicting KDE components with the SonicDE ones. At the end, you have the option to switch to the [Sonic Login Manager](https://github.com/Sonic-DE/sonic-login-manager) from your current one. In case you don't get logged out automatically, please do so manually and log in again to start using SonicDE.
+The script needs to be run at a [text console](https://wiki.archlinux.org/title/Linux_console) since the installation steps may kill your graphical session. You can switch to the text console via, e.g., `Ctrl+Alt+F3`.
+
+The script will also try to silently replace the conflicting KDE components with the SonicDE ones. If that fails, please answer any interactive `pacman` prompts. At the end, you have the option to switch to the [Sonic Login Manager](https://github.com/Sonic-DE/sonic-login-manager) from your current one. In case you don't get logged out automatically, please do so manually and log in again to start using SonicDE.
 
 ## Installing SonicDE Manually
 
@@ -30,6 +32,11 @@ First, please download the public OpenPGP signing key [`sonicde-artixlinux.asc`]
 curl -O https://sonicde-artix.github.io/sonicde-artixlinux.asc
 sudo pacman-key --add sonicde-artixlinux.asc
 sudo pacman-key --finger 72AAA51726BC3C29
+```
+
+Check that the fingerprint matches before signing the key:
+
+```shell
 sudo pacman-key --lsign-key 72AAA51726BC3C29
 ```
 
@@ -47,7 +54,7 @@ Server = https://github.com/sonicde-artix/stable/releases/download/$arch
 Run `pacman` to update all package indexes and installed packages:
 
 ```shell
-sudo pacman -Syyu
+sudo pacman -Syu
 ```
 
 ### Installing SonicDE
@@ -84,6 +91,7 @@ Please note that these repositories are no longer being updated. You can migrate
 [sonicde-stable]
 Server = https://github.com/sonicde-artix/stable/releases/download/$arch
 ```
+
 Finally run `pacman -Syu` to update the installed SonicDE packages and the rest of your system.
 
 ## Getting in Contact
@@ -91,5 +99,3 @@ Finally run `pacman -Syu` to update the installed SonicDE packages and the rest 
 Please report any enhancement requests or issues with this repository at [Issues · sonicde-artix/sonicde-artix](https://github.com/sonicde-artix/sonicde-artix/issues). If you have a specific issue, please see the [list of package repositories](https://github.com/orgs/sonicde-artix/repositories?q=topic%3Apackage) and report it there. In case you need help, want to report success, or talk about other aspects, please also check the official SonicDE channels.
 
 <img src="./docs/icons/bluesky.svg">&nbsp;[Bluesky](https://bsky.app/profile/sonicdesktop.bsky.social)&nbsp; <img src="./docs/icons/discord.svg">&nbsp;[Discord](https://discord.gg/cNZMQ62u5S) &nbsp; <img src="./docs/icons/mastodon.svg">&nbsp;[Mastodon](https://mastodon.social/@sonicdesktop) &nbsp; <img src="./docs/icons/matrix.svg">&nbsp;[Matrix](https://matrix.to/#/#sonicdesktop:matrix.org) &nbsp; <img src="./docs/icons/oftc.svg">&nbsp;[OFTC IRC](https://webchat.oftc.net/?channels=sonicde%2Csonicde-devel%2Csonicde-dist&uio=MT11bmRlZmluZWQb1) &nbsp; <img src="./docs/icons/telegram.svg">&nbsp;[Telegram](https://t.me/sonic_de) &nbsp; <img src="./docs/icons/x.svg">&nbsp;[X (Twitter)](https://x.com/SonicDesktop)
-
-
