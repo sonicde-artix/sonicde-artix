@@ -5,7 +5,7 @@
 
 pkgname=sonic-system-info
 pkgver=6.8.0
-pkgrel=1
+pkgrel=2
 pkgdesc='A utility that provides information about a computer system'
 arch=('x86_64')
 url='https://github.com/Sonic-DE/sonic-system-info'
@@ -40,7 +40,6 @@ depends=(
 	'sonic-frameworks-settings-utils'
 	'sonic-system-settings'
 	'vulkan-tools'
-	'wayland-utils'
 	'xorg-xdpyinfo'
 )
 makedepends=(
