@@ -1,7 +1,7 @@
 pkgbase = sonic-system-info
 	pkgdesc = A utility that provides information about a computer system
 	pkgver = 6.8.0
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/Sonic-DE/sonic-system-info
 	arch = x86_64
 	groups = sonicde
@@ -39,7 +39,6 @@ pkgbase = sonic-system-info
 	depends = sonic-frameworks-settings-utils
 	depends = sonic-system-settings
 	depends = vulkan-tools
-	depends = wayland-utils
 	depends = xorg-xdpyinfo
 	optdepends = fwupd: firmware security module
 	optdepends = sonic-disks: SMART devices health monitor
